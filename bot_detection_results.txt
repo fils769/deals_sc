@@ -1,0 +1,59 @@
+BOT DETECTION TEST RESULTS
+==================================================
+
+URL: https://www.visitgreece.gr/events/
+Title: Events
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="en" class="darkTheme"><head><script type="text/javascript" data-service="cookiemon">window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }</script>
+					...
+----------------------------------------
+URL: https://allofgreeceone.culture.gov.gr/
+Title: Όλη η Ελλάδα ένας πολιτισμός
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="el" style="--vh: 4.3px; --slider-card-height: 614px; --searchInputWidth: 513px;"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+...
+----------------------------------------
+URL: https://pigolampides.gr/
+Title: Πυγολαμπίδες
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="el"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="htt...
+----------------------------------------
+URL: https://www.more.com/
+Title: Εκδηλώσεις & more | Εισιτήρια online | More.com
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html id="homepage" lang="el" class=""><head prefix="og: http://ogp.me/ns#"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width...
+----------------------------------------
+URL: https://events.kalamata.gr/
+Title: Tο επίσημο ημερολόγιο εκδηλώσεων του Δήμου Καλαμάτας
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="el"><head>
+<title>Tο επίσημο ημερολόγιο εκδηλώσεων του Δήμου Καλαμάτας</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+   ...
+----------------------------------------
+URL: https://www.olakala.gr/
+Title: olakala.gr | Δωρεάν Εκδηλώσεις & Δράσεις στη Θεσσαλονίκη
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html class="v2" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/e...
+----------------------------------------

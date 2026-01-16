@@ -1,0 +1,1487 @@
+2026-01-10 00:11:07 - app.main - INFO - ================================================================================
+2026-01-10 00:11:07 - app.main - INFO - Application Starting Up
+2026-01-10 00:11:07 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:11:07 - app.main - INFO - Log Level: INFO
+2026-01-10 00:11:07 - app.main - INFO - ================================================================================
+2026-01-10 00:11:07 - app.main - INFO - Creating database tables...
+2026-01-10 00:11:07 - app.main - INFO - ================================================================================
+2026-01-10 00:11:07 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:11:07 - app.main - INFO - ================================================================================
+2026-01-10 00:12:51 - app.main - INFO - ================================================================================
+2026-01-10 00:12:51 - app.main - INFO - Application Starting Up
+2026-01-10 00:12:51 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:12:51 - app.main - INFO - Log Level: INFO
+2026-01-10 00:12:51 - app.main - INFO - ================================================================================
+2026-01-10 00:12:51 - app.main - INFO - Creating database tables...
+2026-01-10 00:12:51 - app.main - INFO - ================================================================================
+2026-01-10 00:12:51 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:12:51 - app.main - INFO - ================================================================================
+2026-01-10 00:13:06 - app.main - INFO - ================================================================================
+2026-01-10 00:13:06 - app.main - INFO - Application Starting Up
+2026-01-10 00:13:06 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:13:06 - app.main - INFO - Log Level: INFO
+2026-01-10 00:13:06 - app.main - INFO - ================================================================================
+2026-01-10 00:13:06 - app.main - INFO - Creating database tables...
+2026-01-10 00:13:06 - app.main - INFO - ================================================================================
+2026-01-10 00:13:06 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:13:06 - app.main - INFO - ================================================================================
+2026-01-10 00:16:37 - app.main - INFO - ================================================================================
+2026-01-10 00:16:37 - app.main - INFO - Application Starting Up
+2026-01-10 00:16:37 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:16:37 - app.main - INFO - Log Level: INFO
+2026-01-10 00:16:37 - app.main - INFO - ================================================================================
+2026-01-10 00:16:37 - app.main - INFO - Creating database tables...
+2026-01-10 00:16:37 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 00:16:37 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 00:16:37 - app.main - INFO - ================================================================================
+2026-01-10 00:16:37 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:16:37 - app.main - INFO - ================================================================================
+2026-01-10 00:19:01 - app.main - INFO - ================================================================================
+2026-01-10 00:19:01 - app.main - INFO - Application Starting Up
+2026-01-10 00:19:01 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:19:01 - app.main - INFO - Log Level: INFO
+2026-01-10 00:19:01 - app.main - INFO - ================================================================================
+2026-01-10 00:19:01 - app.main - INFO - Creating database tables...
+2026-01-10 00:19:02 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 00:19:02 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 00:19:02 - app.main - INFO - ================================================================================
+2026-01-10 00:19:02 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:19:02 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - Application Starting Up
+2026-01-10 00:22:52 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:22:52 - app.main - INFO - Log Level: INFO
+2026-01-10 00:22:52 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - Creating database tables...
+2026-01-10 00:22:52 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 00:22:52 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 00:22:52 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:22:52 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 00:22:52 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 00:22:52 - app.main - INFO - ================================================================================
+2026-01-10 00:22:52 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 00:22:52 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 00:24:18 - app.main - ERROR - ================================================================================
+2026-01-10 00:24:18 - app.main - ERROR - ✗ SCRAPING JOB FAILED: Could not reach host. Are you offline?
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='googlechromelabs.github.io', port=443) at 0x27032fed220>, 'Connection to googlechromelabs.github.io timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='googlechromelabs.github.io', port=443): Max retries exceeded with url: /chrome-for-testing/latest-patch-versions-per-build.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='googlechromelabs.github.io', port=443) at 0x27032fed220>, 'Connection to googlechromelabs.github.io timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\webdriver_manager\core\http.py", line 32, in get
+    resp = requests.get(
+           ^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='googlechromelabs.github.io', port=443): Max retries exceeded with url: /chrome-for-testing/latest-patch-versions-per-build.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='googlechromelabs.github.io', port=443) at 0x27032fed220>, 'Connection to googlechromelabs.github.io timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 322, in run_scraping
+    deals = scraper.scrape_deals(max_products)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 220, in scrape_deals
+    self.setup_driver()
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 68, in setup_driver
+    service = Service(ChromeDriverManager().install())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\webdriver_manager\chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\webdriver_manager\core\manager.py", line 35, in _get_driver_binary_path
+    binary_path = self._cache_manager.find_driver(driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 105, in find_driver
+    driver_version = self.get_cache_key_driver_version(driver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 152, in get_cache_key_driver_version
+    return driver.get_driver_version_to_download()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\webdriver_manager\core\driver.py", line 48, in get_driver_version_to_download
+    return self.get_latest_release_version()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\webdriver_manager\drivers\chrome.py", line 59, in get_latest_release_version
+    response = self._http_client.get(url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\webdriver_manager\core\http.py", line 35, in get
+    raise exceptions.ConnectionError(f"Could not reach host. Are you offline?")
+requests.exceptions.ConnectionError: Could not reach host. Are you offline?
+2026-01-10 00:24:18 - app.main - ERROR - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - Application Starting Up
+2026-01-10 00:25:08 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:25:08 - app.main - INFO - Log Level: INFO
+2026-01-10 00:25:08 - app.main - INFO - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - Creating database tables...
+2026-01-10 00:25:08 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 00:25:08 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 00:25:08 - app.main - INFO - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:25:08 - app.main - INFO - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 00:25:08 - app.main - INFO - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 00:25:08 - app.main - INFO - ================================================================================
+2026-01-10 00:25:08 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 00:25:08 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 00:27:04 - app.main - ERROR - ================================================================================
+2026-01-10 00:27:04 - app.main - ERROR - ✗ SCRAPING JOB FAILED: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 38, in get_path
+    path = SeleniumManager().driver_location(options) if path is None else path
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 94, in driver_location
+    output = self.run(args)
+             ^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 140, in run
+    raise WebDriverException(f"Unsuccessful command executed: {command}.\n{result}{stderr}")
+selenium.common.exceptions.WebDriverException: Message: Unsuccessful command executed: C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json.
+{'code': 65, 'message': 'error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: tcp connect error: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (os error 10060)', 'driver_path': '', 'browser_path': ''}
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 322, in run_scraping
+    deals = scraper.scrape_deals(max_products)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 253, in scrape_deals
+    self.setup_driver()
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 92, in setup_driver
+    self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 51, in __init__
+    self.service.path = DriverFinder.get_path(self.service, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 41, in get_path
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2026-01-10 00:27:04 - app.main - ERROR - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - Application Starting Up
+2026-01-10 00:28:18 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:28:18 - app.main - INFO - Log Level: INFO
+2026-01-10 00:28:18 - app.main - INFO - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - Creating database tables...
+2026-01-10 00:28:18 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 00:28:18 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 00:28:18 - app.main - INFO - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:28:18 - app.main - INFO - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 00:28:18 - app.main - INFO - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 00:28:18 - app.main - INFO - ================================================================================
+2026-01-10 00:28:18 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 00:28:18 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 00:30:15 - app.main - ERROR - ================================================================================
+2026-01-10 00:30:16 - app.main - ERROR - ✗ SCRAPING JOB FAILED: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 38, in get_path
+    path = SeleniumManager().driver_location(options) if path is None else path
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 94, in driver_location
+    output = self.run(args)
+             ^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 140, in run
+    raise WebDriverException(f"Unsuccessful command executed: {command}.\n{result}{stderr}")
+selenium.common.exceptions.WebDriverException: Message: Unsuccessful command executed: C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json.
+{'code': 65, 'message': 'error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: tcp connect error: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (os error 10060)', 'driver_path': '', 'browser_path': ''}
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 322, in run_scraping
+    deals = scraper.scrape_deals(max_products)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 253, in scrape_deals
+    self.setup_driver()
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 92, in setup_driver
+    self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 51, in __init__
+    self.service.path = DriverFinder.get_path(self.service, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 41, in get_path
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2026-01-10 00:30:16 - app.main - ERROR - ================================================================================
+2026-01-10 00:49:12 - app.main - INFO - ================================================================================
+2026-01-10 00:49:12 - app.main - INFO - Application Starting Up
+2026-01-10 00:49:12 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:49:12 - app.main - INFO - Log Level: INFO
+2026-01-10 00:49:12 - app.main - INFO - ================================================================================
+2026-01-10 00:49:12 - app.main - INFO - Creating database tables...
+2026-01-10 00:49:15 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 00:49:15 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 00:49:15 - app.main - INFO - ================================================================================
+2026-01-10 00:49:15 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:49:15 - app.main - INFO - ================================================================================
+2026-01-10 00:49:15 - app.main - INFO - ================================================================================
+2026-01-10 00:49:15 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 00:49:15 - app.main - INFO - ================================================================================
+2026-01-10 00:49:15 - app.main - INFO - ================================================================================
+2026-01-10 00:49:15 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 00:49:15 - app.main - INFO - ================================================================================
+2026-01-10 00:49:15 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 00:49:15 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 00:51:37 - app.main - ERROR - ================================================================================
+2026-01-10 00:51:37 - app.main - ERROR - ✗ SCRAPING JOB FAILED: cannot access local variable 'current_products' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 322, in run_scraping
+    deals = scraper.scrape_deals(max_products)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 269, in scrape_deals
+    self.handle_infinite_scroll(max_products)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 163, in handle_infinite_scroll
+    logger.info(f"✓ Infinite scroll completed. Total products found: {current_products}")
+                                                                      ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'current_products' where it is not associated with a value
+2026-01-10 00:51:37 - app.main - ERROR - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - Application Starting Up
+2026-01-10 00:54:50 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:54:50 - app.main - INFO - Log Level: INFO
+2026-01-10 00:54:50 - app.main - INFO - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - Creating database tables...
+2026-01-10 00:54:50 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 00:54:50 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 00:54:50 - app.main - INFO - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:54:50 - app.main - INFO - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 00:54:50 - app.main - INFO - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 00:54:50 - app.main - INFO - ================================================================================
+2026-01-10 00:54:50 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 00:54:50 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 00:57:05 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 00:57:05 - app.main - INFO - Processing 48 deals...
+2026-01-10 00:57:05 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 00:57:05 - app.main - ERROR - ✗ Error saving to database: (psycopg2.errors.UndefinedColumn) column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+[SQL: SELECT deals.id AS deals_id, deals.title AS deals_title, deals.category AS deals_category, deals.specs AS deals_specs, deals.original_price AS deals_original_price, deals.current_price AS deals_current_price, deals.discount_percentage AS deals_discount_percentage, deals.rating AS deals_rating, deals.review_count AS deals_review_count, deals.product_url AS deals_product_url, deals.image_url AS deals_image_url, deals.skuid AS deals_skuid, deals.product_id AS deals_product_id, deals.shop_count AS deals_shop_count, deals.scraped_at AS deals_scraped_at, deals.created_at AS deals_created_at, deals.updated_at AS deals_updated_at, deals.is_active AS deals_is_active 
+FROM deals 
+WHERE deals.skuid = %(skuid_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'skuid_1': '34435342', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 271, in save_deals_to_db
+    ).first()
+      ^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2748, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+[SQL: SELECT deals.id AS deals_id, deals.title AS deals_title, deals.category AS deals_category, deals.specs AS deals_specs, deals.original_price AS deals_original_price, deals.current_price AS deals_current_price, deals.discount_percentage AS deals_discount_percentage, deals.rating AS deals_rating, deals.review_count AS deals_review_count, deals.product_url AS deals_product_url, deals.image_url AS deals_image_url, deals.skuid AS deals_skuid, deals.product_id AS deals_product_id, deals.shop_count AS deals_shop_count, deals.scraped_at AS deals_scraped_at, deals.created_at AS deals_created_at, deals.updated_at AS deals_updated_at, deals.is_active AS deals_is_active 
+FROM deals 
+WHERE deals.skuid = %(skuid_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'skuid_1': '34435342', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-10 00:57:05 - app.main - INFO - ================================================================================
+2026-01-10 00:57:05 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 00:57:05 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - Application Starting Up
+2026-01-10 00:59:18 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 00:59:18 - app.main - INFO - Log Level: INFO
+2026-01-10 00:59:18 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - Creating database tables...
+2026-01-10 00:59:18 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 00:59:18 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 00:59:18 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 00:59:18 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 00:59:18 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 00:59:18 - app.main - INFO - ================================================================================
+2026-01-10 00:59:18 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 00:59:18 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 00:59:45 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 00:59:45 - app.main - INFO - Processing 48 deals...
+2026-01-10 00:59:45 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 00:59:45 - app.main - ERROR - ✗ Error saving to database: (psycopg2.errors.UndefinedColumn) column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+[SQL: SELECT deals.id AS deals_id, deals.title AS deals_title, deals.category AS deals_category, deals.specs AS deals_specs, deals.original_price AS deals_original_price, deals.current_price AS deals_current_price, deals.discount_percentage AS deals_discount_percentage, deals.rating AS deals_rating, deals.review_count AS deals_review_count, deals.product_url AS deals_product_url, deals.image_url AS deals_image_url, deals.skuid AS deals_skuid, deals.product_id AS deals_product_id, deals.shop_count AS deals_shop_count, deals.scraped_at AS deals_scraped_at, deals.created_at AS deals_created_at, deals.updated_at AS deals_updated_at, deals.is_active AS deals_is_active 
+FROM deals 
+WHERE deals.skuid = %(skuid_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'skuid_1': '34435342', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 271, in save_deals_to_db
+    ).first()
+      ^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2748, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+[SQL: SELECT deals.id AS deals_id, deals.title AS deals_title, deals.category AS deals_category, deals.specs AS deals_specs, deals.original_price AS deals_original_price, deals.current_price AS deals_current_price, deals.discount_percentage AS deals_discount_percentage, deals.rating AS deals_rating, deals.review_count AS deals_review_count, deals.product_url AS deals_product_url, deals.image_url AS deals_image_url, deals.skuid AS deals_skuid, deals.product_id AS deals_product_id, deals.shop_count AS deals_shop_count, deals.scraped_at AS deals_scraped_at, deals.created_at AS deals_created_at, deals.updated_at AS deals_updated_at, deals.is_active AS deals_is_active 
+FROM deals 
+WHERE deals.skuid = %(skuid_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'skuid_1': '34435342', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-10 00:59:45 - app.main - INFO - ================================================================================
+2026-01-10 00:59:45 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 00:59:45 - app.main - INFO - ================================================================================
+2026-01-10 01:01:12 - app.main - INFO - ================================================================================
+2026-01-10 01:01:12 - app.main - INFO - Application Starting Up
+2026-01-10 01:01:12 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 01:01:12 - app.main - INFO - Log Level: INFO
+2026-01-10 01:01:12 - app.main - INFO - ================================================================================
+2026-01-10 01:01:12 - app.main - INFO - Creating database tables...
+2026-01-10 01:01:13 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 01:01:13 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 01:01:13 - app.main - INFO - ================================================================================
+2026-01-10 01:01:13 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 01:01:13 - app.main - INFO - ================================================================================
+2026-01-10 01:01:13 - app.main - INFO - ================================================================================
+2026-01-10 01:01:13 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 01:01:13 - app.main - INFO - ================================================================================
+2026-01-10 01:01:13 - app.main - INFO - ================================================================================
+2026-01-10 01:01:13 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 01:01:13 - app.main - INFO - ================================================================================
+2026-01-10 01:01:13 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 01:01:13 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 01:01:30 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 01:01:30 - app.main - INFO - Processing 48 deals...
+2026-01-10 01:01:30 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 01:01:31 - app.main - ERROR - ✗ Error saving to database: (psycopg2.errors.UndefinedColumn) column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+[SQL: SELECT deals.id AS deals_id, deals.title AS deals_title, deals.category AS deals_category, deals.specs AS deals_specs, deals.original_price AS deals_original_price, deals.current_price AS deals_current_price, deals.discount_percentage AS deals_discount_percentage, deals.rating AS deals_rating, deals.review_count AS deals_review_count, deals.product_url AS deals_product_url, deals.image_url AS deals_image_url, deals.skuid AS deals_skuid, deals.product_id AS deals_product_id, deals.shop_count AS deals_shop_count, deals.scraped_at AS deals_scraped_at, deals.created_at AS deals_created_at, deals.updated_at AS deals_updated_at, deals.is_active AS deals_is_active 
+FROM deals 
+WHERE deals.skuid = %(skuid_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'skuid_1': '34435342', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 271, in save_deals_to_db
+    ).first()
+      ^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2748, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column deals.specs does not exist
+LINE 1: ...AS deals_title, deals.category AS deals_category, deals.spec...
+                                                             ^
+
+[SQL: SELECT deals.id AS deals_id, deals.title AS deals_title, deals.category AS deals_category, deals.specs AS deals_specs, deals.original_price AS deals_original_price, deals.current_price AS deals_current_price, deals.discount_percentage AS deals_discount_percentage, deals.rating AS deals_rating, deals.review_count AS deals_review_count, deals.product_url AS deals_product_url, deals.image_url AS deals_image_url, deals.skuid AS deals_skuid, deals.product_id AS deals_product_id, deals.shop_count AS deals_shop_count, deals.scraped_at AS deals_scraped_at, deals.created_at AS deals_created_at, deals.updated_at AS deals_updated_at, deals.is_active AS deals_is_active 
+FROM deals 
+WHERE deals.skuid = %(skuid_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'skuid_1': '34435342', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-10 01:01:31 - app.main - INFO - ================================================================================
+2026-01-10 01:01:31 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 01:01:31 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - Application Starting Up
+2026-01-10 01:03:13 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 01:03:13 - app.main - INFO - Log Level: INFO
+2026-01-10 01:03:13 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - Creating database tables...
+2026-01-10 01:03:13 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 01:03:13 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 01:03:13 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 01:03:13 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 01:03:13 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 01:03:13 - app.main - INFO - ================================================================================
+2026-01-10 01:03:13 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 01:03:13 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 01:03:31 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 01:03:31 - app.main - INFO - Processing 48 deals...
+2026-01-10 01:03:31 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 01:03:31 - app.main - ERROR - ✗ Error saving to database: (psycopg2.errors.UndefinedColumn) column deals.discount_percentage does not exist
+LINE 1: ...rice, deals.current_price AS deals_current_price, deals.disc...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "deals.discount_percent".
+
+[SQL: SELECT deals.id AS deals_id, deals.title AS deals_title, deals.category AS deals_category, deals.specs AS deals_specs, deals.original_price AS deals_original_price, deals.current_price AS deals_current_price, deals.discount_percentage AS deals_discount_percentage, deals.rating AS deals_rating, deals.review_count AS deals_review_count, deals.product_url AS deals_product_url, deals.image_url AS deals_image_url, deals.skuid AS deals_skuid, deals.product_id AS deals_product_id, deals.shop_count AS deals_shop_count, deals.scraped_at AS deals_scraped_at, deals.created_at AS deals_created_at, deals.updated_at AS deals_updated_at, deals.is_active AS deals_is_active 
+FROM deals 
+WHERE deals.skuid = %(skuid_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'skuid_1': '34435342', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column deals.discount_percentage does not exist
+LINE 1: ...rice, deals.current_price AS deals_current_price, deals.disc...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "deals.discount_percent".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 271, in save_deals_to_db
+    ).first()
+      ^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2748, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column deals.discount_percentage does not exist
+LINE 1: ...rice, deals.current_price AS deals_current_price, deals.disc...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "deals.discount_percent".
+
+[SQL: SELECT deals.id AS deals_id, deals.title AS deals_title, deals.category AS deals_category, deals.specs AS deals_specs, deals.original_price AS deals_original_price, deals.current_price AS deals_current_price, deals.discount_percentage AS deals_discount_percentage, deals.rating AS deals_rating, deals.review_count AS deals_review_count, deals.product_url AS deals_product_url, deals.image_url AS deals_image_url, deals.skuid AS deals_skuid, deals.product_id AS deals_product_id, deals.shop_count AS deals_shop_count, deals.scraped_at AS deals_scraped_at, deals.created_at AS deals_created_at, deals.updated_at AS deals_updated_at, deals.is_active AS deals_is_active 
+FROM deals 
+WHERE deals.skuid = %(skuid_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'skuid_1': '34435342', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-10 01:03:31 - app.main - INFO - ================================================================================
+2026-01-10 01:03:31 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 01:03:31 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - Application Starting Up
+2026-01-10 01:08:05 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 01:08:05 - app.main - INFO - Log Level: INFO
+2026-01-10 01:08:05 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - Creating database tables...
+2026-01-10 01:08:05 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 01:08:05 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 01:08:05 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 01:08:05 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 01:08:05 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 01:08:05 - app.main - INFO - ================================================================================
+2026-01-10 01:08:05 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 01:08:05 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 01:08:23 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 01:08:23 - app.main - INFO - Processing 48 deals...
+2026-01-10 01:08:23 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 01:08:23 - app.main - INFO - ✓ Database save completed: 48 new deals, 0 updated deals
+2026-01-10 01:08:23 - app.main - INFO - ================================================================================
+2026-01-10 01:08:23 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 01:08:23 - app.main - INFO - ================================================================================
+2026-01-10 01:40:47 - app.main - INFO - ================================================================================
+2026-01-10 01:40:47 - app.main - INFO - Application Starting Up
+2026-01-10 01:40:47 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 01:40:47 - app.main - INFO - Log Level: INFO
+2026-01-10 01:40:47 - app.main - INFO - ================================================================================
+2026-01-10 01:40:47 - app.main - INFO - Creating database tables...
+2026-01-10 01:40:54 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 01:40:54 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 01:40:54 - app.main - INFO - ================================================================================
+2026-01-10 01:40:54 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 01:40:54 - app.main - INFO - ================================================================================
+2026-01-10 01:40:54 - app.main - INFO - ================================================================================
+2026-01-10 01:40:54 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 01:40:54 - app.main - INFO - ================================================================================
+2026-01-10 01:40:54 - app.main - INFO - ================================================================================
+2026-01-10 01:40:54 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 01:40:54 - app.main - INFO - ================================================================================
+2026-01-10 01:40:54 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 01:40:54 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 01:41:16 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 01:41:16 - app.main - INFO - Processing 48 deals...
+2026-01-10 01:41:16 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 01:41:36 - app.main - INFO - ✓ Database save completed: 48 new deals, 0 updated deals
+2026-01-10 01:41:36 - app.main - INFO - ================================================================================
+2026-01-10 01:41:36 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 01:41:36 - app.main - INFO - ================================================================================
+2026-01-10 01:43:12 - app.main - INFO - ================================================================================
+2026-01-10 01:43:12 - app.main - INFO - Application Starting Up
+2026-01-10 01:43:12 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 01:43:12 - app.main - INFO - Log Level: INFO
+2026-01-10 01:43:12 - app.main - INFO - ================================================================================
+2026-01-10 01:43:12 - app.main - INFO - Creating database tables...
+2026-01-10 01:43:19 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 01:43:19 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 01:43:19 - app.main - INFO - ================================================================================
+2026-01-10 01:43:19 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 01:43:19 - app.main - INFO - ================================================================================
+2026-01-10 01:43:19 - app.main - INFO - ================================================================================
+2026-01-10 01:43:19 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 01:43:19 - app.main - INFO - ================================================================================
+2026-01-10 01:43:19 - app.main - INFO - ================================================================================
+2026-01-10 01:43:19 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 01:43:19 - app.main - INFO - ================================================================================
+2026-01-10 01:43:19 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 01:43:19 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 01:43:44 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 01:43:44 - app.main - INFO - Processing 48 deals...
+2026-01-10 01:43:44 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 01:44:19 - app.main - INFO - ✓ Database save completed: 0 new deals, 48 updated deals
+2026-01-10 01:44:19 - app.main - INFO - ================================================================================
+2026-01-10 01:44:19 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 01:44:19 - app.main - INFO - ================================================================================
+2026-01-10 10:46:03 - app.main - INFO - ================================================================================
+2026-01-10 10:46:03 - app.main - INFO - Application Starting Up
+2026-01-10 10:46:03 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 10:46:03 - app.main - INFO - Log Level: INFO
+2026-01-10 10:46:03 - app.main - INFO - ================================================================================
+2026-01-10 10:46:03 - app.main - INFO - Creating database tables...
+2026-01-10 10:46:13 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 10:46:13 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 10:46:13 - app.main - INFO - ================================================================================
+2026-01-10 10:46:13 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 10:46:13 - app.main - INFO - ================================================================================
+2026-01-10 10:46:13 - app.main - INFO - ================================================================================
+2026-01-10 10:46:13 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 10:46:13 - app.main - INFO - ================================================================================
+2026-01-10 10:46:13 - app.main - INFO - ================================================================================
+2026-01-10 10:46:13 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 10:46:13 - app.main - INFO - ================================================================================
+2026-01-10 10:46:13 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 10:46:13 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 10:46:51 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 10:46:51 - app.main - INFO - Processing 48 deals...
+2026-01-10 10:46:51 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 10:47:47 - app.main - INFO - ✓ Database save completed: 1 new deals, 47 updated deals
+2026-01-10 10:47:47 - app.main - INFO - ================================================================================
+2026-01-10 10:47:47 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 10:47:47 - app.main - INFO - ================================================================================
+2026-01-10 11:31:08 - app.main - INFO - ================================================================================
+2026-01-10 11:31:08 - app.main - INFO - Application Starting Up
+2026-01-10 11:31:08 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 11:31:08 - app.main - INFO - Log Level: INFO
+2026-01-10 11:31:08 - app.main - INFO - ================================================================================
+2026-01-10 11:31:08 - app.main - INFO - Creating database tables...
+2026-01-10 11:31:16 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 11:31:16 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 11:31:16 - app.main - INFO - ================================================================================
+2026-01-10 11:31:16 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 11:31:16 - app.main - INFO - ================================================================================
+2026-01-10 11:31:16 - app.main - INFO - ================================================================================
+2026-01-10 11:31:16 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 11:31:16 - app.main - INFO - ================================================================================
+2026-01-10 11:31:16 - app.main - INFO - ================================================================================
+2026-01-10 11:31:16 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 11:31:16 - app.main - INFO - ================================================================================
+2026-01-10 11:31:16 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 11:31:16 - app.main - ERROR - ================================================================================
+2026-01-10 11:31:16 - app.main - ERROR - ✗ SCRAPING JOB FAILED: 'SkroutzDealsScraper' object does not support the context manager protocol
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 334, in run_scraping
+    with SkroutzDealsScraper(headless=True) as scraper:
+TypeError: 'SkroutzDealsScraper' object does not support the context manager protocol
+2026-01-10 11:31:16 - app.main - ERROR - ================================================================================
+2026-01-10 11:32:08 - app.main - INFO - ================================================================================
+2026-01-10 11:32:08 - app.main - INFO - Application Starting Up
+2026-01-10 11:32:08 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 11:32:08 - app.main - INFO - Log Level: INFO
+2026-01-10 11:32:08 - app.main - INFO - ================================================================================
+2026-01-10 11:32:08 - app.main - INFO - Creating database tables...
+2026-01-10 11:32:14 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 11:32:14 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 11:32:14 - app.main - INFO - ================================================================================
+2026-01-10 11:32:14 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 11:32:14 - app.main - INFO - ================================================================================
+2026-01-10 11:32:14 - app.main - INFO - ================================================================================
+2026-01-10 11:32:14 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 11:32:14 - app.main - INFO - ================================================================================
+2026-01-10 11:32:14 - app.main - INFO - ================================================================================
+2026-01-10 11:32:14 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 11:32:14 - app.main - INFO - ================================================================================
+2026-01-10 11:32:14 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 11:32:14 - app.main - ERROR - ================================================================================
+2026-01-10 11:32:14 - app.main - ERROR - ✗ SCRAPING JOB FAILED: 'SkroutzDealsScraper' object does not support the context manager protocol
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 334, in run_scraping
+    with SkroutzDealsScraper(headless=True) as scraper:
+TypeError: 'SkroutzDealsScraper' object does not support the context manager protocol
+2026-01-10 11:32:14 - app.main - ERROR - ================================================================================
+2026-01-10 11:39:53 - app.main - INFO - ================================================================================
+2026-01-10 11:39:53 - app.main - INFO - Application Starting Up
+2026-01-10 11:39:53 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 11:39:53 - app.main - INFO - Log Level: INFO
+2026-01-10 11:39:53 - app.main - INFO - ================================================================================
+2026-01-10 11:39:53 - app.main - INFO - Creating database tables...
+2026-01-10 11:40:02 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 11:40:02 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 11:40:02 - app.main - INFO - ================================================================================
+2026-01-10 11:40:02 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 11:40:02 - app.main - INFO - ================================================================================
+2026-01-10 11:40:02 - app.main - INFO - ================================================================================
+2026-01-10 11:40:02 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 11:40:02 - app.main - INFO - ================================================================================
+2026-01-10 11:40:02 - app.main - INFO - ================================================================================
+2026-01-10 11:40:02 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 11:40:02 - app.main - INFO - ================================================================================
+2026-01-10 11:40:02 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 11:40:02 - app.main - ERROR - ================================================================================
+2026-01-10 11:40:02 - app.main - ERROR - ✗ SCRAPING JOB FAILED: 'SkroutzDealsScraper' object does not support the context manager protocol
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 334, in run_scraping
+    with SkroutzDealsScraper(headless=True) as scraper:
+TypeError: 'SkroutzDealsScraper' object does not support the context manager protocol
+2026-01-10 11:40:02 - app.main - ERROR - ================================================================================
+2026-01-10 11:42:09 - app.main - INFO - ================================================================================
+2026-01-10 11:42:09 - app.main - INFO - Application Starting Up
+2026-01-10 11:42:09 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 11:42:09 - app.main - INFO - Log Level: INFO
+2026-01-10 11:42:09 - app.main - INFO - ================================================================================
+2026-01-10 11:42:09 - app.main - INFO - Creating database tables...
+2026-01-10 11:42:14 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 11:42:14 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 11:42:15 - app.main - INFO - ================================================================================
+2026-01-10 11:42:15 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 11:42:15 - app.main - INFO - ================================================================================
+2026-01-10 11:42:15 - app.main - INFO - ================================================================================
+2026-01-10 11:42:15 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 11:42:15 - app.main - INFO - ================================================================================
+2026-01-10 11:42:15 - app.main - INFO - ================================================================================
+2026-01-10 11:42:15 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 11:42:15 - app.main - INFO - ================================================================================
+2026-01-10 11:42:15 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 11:42:15 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 11:42:43 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 11:42:43 - app.main - INFO - Processing 48 deals...
+2026-01-10 11:42:43 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 11:43:29 - app.main - INFO - ✓ Database save completed: 0 new deals, 48 updated deals
+2026-01-10 11:43:29 - app.main - INFO - ================================================================================
+2026-01-10 11:43:29 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 11:43:29 - app.main - INFO - ================================================================================
+2026-01-10 11:45:27 - app.main - INFO - ================================================================================
+2026-01-10 11:45:27 - app.main - INFO - Application Starting Up
+2026-01-10 11:45:27 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 11:45:27 - app.main - INFO - Log Level: INFO
+2026-01-10 11:45:27 - app.main - INFO - ================================================================================
+2026-01-10 11:45:27 - app.main - INFO - Creating database tables...
+2026-01-10 11:45:35 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 11:45:35 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 11:45:35 - app.main - INFO - ================================================================================
+2026-01-10 11:45:35 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 11:45:35 - app.main - INFO - ================================================================================
+2026-01-10 11:45:35 - app.main - INFO - ================================================================================
+2026-01-10 11:45:35 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 11:45:35 - app.main - INFO - ================================================================================
+2026-01-10 11:45:35 - app.main - INFO - ================================================================================
+2026-01-10 11:45:35 - app.main - INFO - SCRAPING JOB STARTED - Max products: 50
+2026-01-10 11:45:35 - app.main - INFO - ================================================================================
+2026-01-10 11:45:35 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 11:45:35 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 11:46:17 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 11:46:17 - app.main - INFO - Processing 48 deals...
+2026-01-10 11:46:17 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 11:47:06 - app.main - INFO - ✓ Database save completed: 0 new deals, 48 updated deals
+2026-01-10 11:47:06 - app.main - INFO - ================================================================================
+2026-01-10 11:47:06 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 11:47:06 - app.main - INFO - ================================================================================
+2026-01-10 12:03:18 - app.main - INFO - ================================================================================
+2026-01-10 12:03:18 - app.main - INFO - Application Starting Up
+2026-01-10 12:03:18 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 12:03:18 - app.main - INFO - Log Level: INFO
+2026-01-10 12:03:18 - app.main - INFO - ================================================================================
+2026-01-10 12:03:18 - app.main - INFO - Creating database tables...
+2026-01-10 12:03:31 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 12:03:31 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 12:03:31 - app.main - INFO - ================================================================================
+2026-01-10 12:03:31 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 12:03:31 - app.main - INFO - ================================================================================
+2026-01-10 12:03:31 - app.main - INFO - ================================================================================
+2026-01-10 12:03:31 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 12:03:31 - app.main - INFO - ================================================================================
+2026-01-10 12:03:31 - app.main - INFO - ================================================================================
+2026-01-10 12:03:31 - app.main - INFO - SCRAPING JOB STARTED - Max products: 200
+2026-01-10 12:03:31 - app.main - INFO - ================================================================================
+2026-01-10 12:03:31 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 12:03:31 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 12:04:32 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 12:04:32 - app.main - INFO - Processing 48 deals...
+2026-01-10 12:04:32 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 12:05:49 - app.main - INFO - ✓ Database save completed: 0 new deals, 48 updated deals
+2026-01-10 12:05:49 - app.main - INFO - ================================================================================
+2026-01-10 12:05:49 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 12:05:49 - app.main - INFO - ================================================================================
+2026-01-10 12:09:52 - app.main - INFO - ================================================================================
+2026-01-10 12:09:52 - app.main - INFO - Application Starting Up
+2026-01-10 12:09:52 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 12:09:52 - app.main - INFO - Log Level: INFO
+2026-01-10 12:09:52 - app.main - INFO - ================================================================================
+2026-01-10 12:09:52 - app.main - INFO - Creating database tables...
+2026-01-10 12:09:59 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 12:09:59 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 12:09:59 - app.main - INFO - ================================================================================
+2026-01-10 12:09:59 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 12:09:59 - app.main - INFO - ================================================================================
+2026-01-10 12:09:59 - app.main - INFO - ================================================================================
+2026-01-10 12:09:59 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 12:09:59 - app.main - INFO - ================================================================================
+2026-01-10 12:09:59 - app.main - INFO - ================================================================================
+2026-01-10 12:09:59 - app.main - INFO - SCRAPING JOB STARTED - Max products: 200
+2026-01-10 12:09:59 - app.main - INFO - ================================================================================
+2026-01-10 12:09:59 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 12:09:59 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 12:11:31 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 12:11:31 - app.main - INFO - Processing 48 deals...
+2026-01-10 12:11:31 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 12:12:15 - app.main - INFO - ✓ Database save completed: 1 new deals, 47 updated deals
+2026-01-10 12:12:15 - app.main - INFO - ================================================================================
+2026-01-10 12:12:15 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 12:12:15 - app.main - INFO - ================================================================================
+2026-01-10 12:12:21 - app.main - INFO - Testing page 2 loading...
+2026-01-10 12:12:23 - app.main - INFO - Loading URL: https://www.skroutz.gr/deals?page=2
+2026-01-10 12:12:43 - app.main - ERROR - Error testing page 2: name 'time' is not defined
+2026-01-10 12:14:48 - app.main - INFO - ================================================================================
+2026-01-10 12:14:48 - app.main - INFO - Application Starting Up
+2026-01-10 12:14:48 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 12:14:48 - app.main - INFO - Log Level: INFO
+2026-01-10 12:14:48 - app.main - INFO - ================================================================================
+2026-01-10 12:14:48 - app.main - INFO - Creating database tables...
+2026-01-10 12:14:56 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 12:14:56 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 12:14:56 - app.main - INFO - ================================================================================
+2026-01-10 12:14:56 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 12:14:56 - app.main - INFO - ================================================================================
+2026-01-10 12:14:56 - app.main - INFO - ================================================================================
+2026-01-10 12:14:56 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 12:14:56 - app.main - INFO - ================================================================================
+2026-01-10 12:14:56 - app.main - INFO - ================================================================================
+2026-01-10 12:14:56 - app.main - INFO - SCRAPING JOB STARTED - Max products: 200
+2026-01-10 12:14:56 - app.main - INFO - ================================================================================
+2026-01-10 12:14:56 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 12:14:56 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 12:15:09 - app.main - INFO - Scraping completed, 0 deals scraped
+2026-01-10 12:15:09 - app.main - WARNING - ✗ No deals were scraped - check if website structure changed
+2026-01-10 12:15:53 - app.main - INFO - ================================================================================
+2026-01-10 12:15:53 - app.main - INFO - Application Starting Up
+2026-01-10 12:15:53 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 12:15:53 - app.main - INFO - Log Level: INFO
+2026-01-10 12:15:53 - app.main - INFO - ================================================================================
+2026-01-10 12:15:53 - app.main - INFO - Creating database tables...
+2026-01-10 12:16:00 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 12:16:00 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 12:16:00 - app.main - INFO - ================================================================================
+2026-01-10 12:16:00 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 12:16:00 - app.main - INFO - ================================================================================
+2026-01-10 12:16:00 - app.main - INFO - ================================================================================
+2026-01-10 12:16:00 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 12:16:00 - app.main - INFO - ================================================================================
+2026-01-10 12:16:00 - app.main - INFO - ================================================================================
+2026-01-10 12:16:00 - app.main - INFO - SCRAPING JOB STARTED - Max products: 200
+2026-01-10 12:16:00 - app.main - INFO - ================================================================================
+2026-01-10 12:16:00 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 12:16:00 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 12:16:53 - app.main - INFO - Scraping completed, 0 deals scraped
+2026-01-10 12:16:53 - app.main - WARNING - ✗ No deals were scraped - check if website structure changed
+2026-01-10 12:17:23 - app.main - INFO - ================================================================================
+2026-01-10 12:17:23 - app.main - INFO - Application Starting Up
+2026-01-10 12:17:23 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 12:17:23 - app.main - INFO - Log Level: INFO
+2026-01-10 12:17:23 - app.main - INFO - ================================================================================
+2026-01-10 12:17:23 - app.main - INFO - Creating database tables...
+2026-01-10 12:17:32 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 12:17:32 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 12:17:32 - app.main - INFO - ================================================================================
+2026-01-10 12:17:32 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 12:17:32 - app.main - INFO - ================================================================================
+2026-01-10 12:17:32 - app.main - INFO - ================================================================================
+2026-01-10 12:17:32 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 12:17:32 - app.main - INFO - ================================================================================
+2026-01-10 12:17:32 - app.main - INFO - ================================================================================
+2026-01-10 12:17:32 - app.main - INFO - SCRAPING JOB STARTED - Max products: 200
+2026-01-10 12:17:32 - app.main - INFO - ================================================================================
+2026-01-10 12:17:32 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 12:17:32 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 12:17:32 - app.main - ERROR - ================================================================================
+2026-01-10 12:17:32 - app.main - ERROR - ✗ SCRAPING JOB FAILED: 'SkroutzDealsScraper' object has no attribute 'close'
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 326, in run_scraping
+    deals = scraper.scrape_deals(max_products)
+            ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SkroutzDealsScraper' object has no attribute 'scrape_deals'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 340, in run_scraping
+    scraper.close()
+    ^^^^^^^^^^^^^
+AttributeError: 'SkroutzDealsScraper' object has no attribute 'close'
+2026-01-10 12:17:32 - app.main - ERROR - ================================================================================
+2026-01-10 12:17:50 - app.main - INFO - ================================================================================
+2026-01-10 12:17:50 - app.main - INFO - Application Starting Up
+2026-01-10 12:17:50 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 12:17:50 - app.main - INFO - Log Level: INFO
+2026-01-10 12:17:50 - app.main - INFO - ================================================================================
+2026-01-10 12:17:50 - app.main - INFO - Creating database tables...
+2026-01-10 12:18:00 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 12:18:00 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 12:18:00 - app.main - INFO - ================================================================================
+2026-01-10 12:18:00 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 12:18:00 - app.main - INFO - ================================================================================
+2026-01-10 12:18:00 - app.main - INFO - ================================================================================
+2026-01-10 12:18:00 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 12:18:00 - app.main - INFO - ================================================================================
+2026-01-10 12:18:00 - app.main - INFO - ================================================================================
+2026-01-10 12:18:00 - app.main - INFO - SCRAPING JOB STARTED - Max products: 200
+2026-01-10 12:18:00 - app.main - INFO - ================================================================================
+2026-01-10 12:18:00 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 12:18:00 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 12:18:00 - app.main - ERROR - ================================================================================
+2026-01-10 12:18:00 - app.main - ERROR - ✗ SCRAPING JOB FAILED: 'SkroutzDealsScraper' object has no attribute 'close'
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 326, in run_scraping
+    deals = scraper.scrape_deals(max_products)
+            ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SkroutzDealsScraper' object has no attribute 'scrape_deals'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 340, in run_scraping
+    scraper.close()
+    ^^^^^^^^^^^^^
+AttributeError: 'SkroutzDealsScraper' object has no attribute 'close'
+2026-01-10 12:18:00 - app.main - ERROR - ================================================================================
+2026-01-10 12:22:21 - app.main - INFO - ================================================================================
+2026-01-10 12:22:21 - app.main - INFO - Application Starting Up
+2026-01-10 12:22:21 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 12:22:21 - app.main - INFO - Log Level: INFO
+2026-01-10 12:22:21 - app.main - INFO - ================================================================================
+2026-01-10 12:22:21 - app.main - INFO - Creating database tables...
+2026-01-10 12:22:27 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 12:22:27 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 12:22:27 - app.main - INFO - ================================================================================
+2026-01-10 12:22:27 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 12:22:27 - app.main - INFO - ================================================================================
+2026-01-10 12:22:27 - app.main - INFO - ================================================================================
+2026-01-10 12:22:27 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 12:22:27 - app.main - INFO - ================================================================================
+2026-01-10 12:22:27 - app.main - INFO - ================================================================================
+2026-01-10 12:22:27 - app.main - INFO - SCRAPING JOB STARTED - Max products: 100
+2026-01-10 12:22:27 - app.main - INFO - ================================================================================
+2026-01-10 12:22:27 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 12:22:27 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 12:23:04 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 12:23:04 - app.main - INFO - Processing 48 deals...
+2026-01-10 12:23:04 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 12:24:00 - app.main - INFO - ✓ Database save completed: 1 new deals, 47 updated deals
+2026-01-10 12:24:00 - app.main - INFO - ================================================================================
+2026-01-10 12:24:00 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 12:24:00 - app.main - INFO - ================================================================================
+2026-01-10 12:26:43 - app.main - INFO - ================================================================================
+2026-01-10 12:26:43 - app.main - INFO - Application Starting Up
+2026-01-10 12:26:43 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 12:26:43 - app.main - INFO - Log Level: INFO
+2026-01-10 12:26:43 - app.main - INFO - ================================================================================
+2026-01-10 12:26:43 - app.main - INFO - Creating database tables...
+2026-01-10 12:26:48 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 12:26:48 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 12:26:48 - app.main - INFO - ================================================================================
+2026-01-10 12:26:48 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 12:26:48 - app.main - INFO - ================================================================================
+2026-01-10 12:26:48 - app.main - INFO - ================================================================================
+2026-01-10 12:26:48 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 12:26:48 - app.main - INFO - ================================================================================
+2026-01-10 12:26:48 - app.main - INFO - ================================================================================
+2026-01-10 12:26:48 - app.main - INFO - SCRAPING JOB STARTED - Max products: 100
+2026-01-10 12:26:48 - app.main - INFO - ================================================================================
+2026-01-10 12:26:48 - app.main - INFO - Initializing Skroutz scraper...
+2026-01-10 12:26:48 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 12:27:41 - app.main - INFO - Scraping completed, 48 deals scraped
+2026-01-10 12:27:41 - app.main - INFO - Processing 48 deals...
+2026-01-10 12:27:41 - app.main - INFO - Saving 48 deals to database...
+2026-01-10 12:28:40 - app.main - INFO - ✓ Database save completed: 0 new deals, 48 updated deals
+2026-01-10 12:28:40 - app.main - INFO - ================================================================================
+2026-01-10 12:28:40 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 48 deals processed
+2026-01-10 12:28:40 - app.main - INFO - ================================================================================
+2026-01-10 13:38:05 - app.main - INFO - ================================================================================
+2026-01-10 13:38:05 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 13:38:05 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 13:38:05 - app.main - INFO - Log Level: INFO
+2026-01-10 13:38:05 - app.main - INFO - ================================================================================
+2026-01-10 13:38:05 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 13:38:26 - app.main - ERROR - ✗ Failed to create database tables: (psycopg2.OperationalError) connection to server at "ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech" (23.21.74.185), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-10 13:41:29 - app.main - INFO - ================================================================================
+2026-01-10 13:41:30 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 13:41:30 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 13:41:30 - app.main - INFO - Log Level: INFO
+2026-01-10 13:41:30 - app.main - INFO - ================================================================================
+2026-01-10 13:41:30 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 13:41:52 - app.main - ERROR - ✗ Failed to create database tables: (psycopg2.OperationalError) connection to server at "ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech" (23.21.74.185), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-10 13:44:33 - app.main - INFO - ================================================================================
+2026-01-10 13:44:33 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 13:44:33 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 13:44:33 - app.main - INFO - Log Level: INFO
+2026-01-10 13:44:33 - app.main - INFO - ================================================================================
+2026-01-10 13:44:33 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 13:44:35 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 13:44:35 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 13:44:35 - app.main - INFO - ================================================================================
+2026-01-10 13:44:35 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 13:44:35 - app.main - INFO - ================================================================================
+2026-01-10 13:44:36 - app.main - INFO - ================================================================================
+2026-01-10 13:44:36 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 13:44:36 - app.main - INFO - ================================================================================
+2026-01-10 13:44:36 - app.main - INFO - ================================================================================
+2026-01-10 13:44:36 - app.main - INFO - MARKET-IN.GR SCRAPING JOB STARTED - Max products: 100
+2026-01-10 13:44:36 - app.main - INFO - ================================================================================
+2026-01-10 13:44:37 - app.main - INFO - Initializing Market-In scraper...
+2026-01-10 13:44:37 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 13:46:53 - app.main - INFO - Scraping completed, 96 deals scraped
+2026-01-10 13:46:53 - app.main - INFO - Processing 96 deals...
+2026-01-10 13:46:53 - app.main - INFO - Saving 96 deals to database...
+2026-01-10 13:46:53 - app.main - ERROR - ✗ Error saving to database: 'brand' is an invalid keyword argument for Deal
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 98, in save_deals_to_db
+    new_deal = Deal(**deal_data)
+               ^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 2142, in _declarative_constructor
+    raise TypeError(
+TypeError: 'brand' is an invalid keyword argument for Deal
+2026-01-10 13:47:16 - app.main - ERROR - ================================================================================
+2026-01-10 13:47:16 - app.main - ERROR - ✗ SCRAPING JOB FAILED: 'brand' is an invalid keyword argument for Deal
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 143, in run_scraping
+    save_deals_to_db(deals)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 98, in save_deals_to_db
+    new_deal = Deal(**deal_data)
+               ^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 2142, in _declarative_constructor
+    raise TypeError(
+TypeError: 'brand' is an invalid keyword argument for Deal
+2026-01-10 13:47:16 - app.main - ERROR - ================================================================================
+2026-01-10 13:50:45 - app.main - INFO - ================================================================================
+2026-01-10 13:50:45 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 13:50:45 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 13:50:45 - app.main - INFO - Log Level: INFO
+2026-01-10 13:50:45 - app.main - INFO - ================================================================================
+2026-01-10 13:50:45 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 13:50:46 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 13:50:46 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 13:50:46 - app.main - INFO - ================================================================================
+2026-01-10 13:50:46 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 13:50:46 - app.main - INFO - ================================================================================
+2026-01-10 13:50:46 - app.main - INFO - ================================================================================
+2026-01-10 13:50:46 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 13:50:46 - app.main - INFO - ================================================================================
+2026-01-10 13:50:46 - app.main - INFO - ================================================================================
+2026-01-10 13:50:46 - app.main - INFO - MARKET-IN.GR SCRAPING JOB STARTED - Max products: 100
+2026-01-10 13:50:46 - app.main - INFO - ================================================================================
+2026-01-10 13:50:46 - app.main - INFO - Initializing Market-In scraper...
+2026-01-10 13:50:46 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 13:51:27 - app.main - INFO - Scraping completed, 0 deals scraped
+2026-01-10 13:51:27 - app.main - WARNING - ✗ No deals were scraped
+2026-01-10 13:51:27 - app.main - ERROR - ================================================================================
+2026-01-10 13:51:27 - app.main - ERROR - ✗ SCRAPING JOB FAILED: 'MarketInScraper' object has no attribute 'close'
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 151, in run_scraping
+    scraper.close()
+    ^^^^^^^^^^^^^
+AttributeError: 'MarketInScraper' object has no attribute 'close'
+2026-01-10 13:51:27 - app.main - ERROR - ================================================================================
+2026-01-10 13:51:52 - app.main - INFO - ================================================================================
+2026-01-10 13:51:52 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 13:51:52 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 13:51:52 - app.main - INFO - Log Level: INFO
+2026-01-10 13:51:52 - app.main - INFO - ================================================================================
+2026-01-10 13:51:52 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 13:51:53 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 13:51:53 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 13:51:53 - app.main - INFO - ================================================================================
+2026-01-10 13:51:53 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 13:51:53 - app.main - INFO - ================================================================================
+2026-01-10 13:51:53 - app.main - INFO - ================================================================================
+2026-01-10 13:51:53 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 13:51:53 - app.main - INFO - ================================================================================
+2026-01-10 13:51:53 - app.main - INFO - ================================================================================
+2026-01-10 13:51:53 - app.main - INFO - MARKET-IN.GR SCRAPING JOB STARTED - Max products: 100
+2026-01-10 13:51:53 - app.main - INFO - ================================================================================
+2026-01-10 13:51:53 - app.main - INFO - Initializing Market-In scraper...
+2026-01-10 13:51:53 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 13:52:02 - app.main - ERROR - ================================================================================
+2026-01-10 13:52:02 - app.main - ERROR - ✗ SCRAPING JOB FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\main.py", line 137, in run_scraping
+    deals = scraper.scrape_deals(max_products)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 98, in scrape_deals
+    self.setup_driver()
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scraper.py", line 79, in setup_driver
+    self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 56, in __init__
+    super().__init__(
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 208, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 292, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 300, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 321, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\poolmanager.py", line 457, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-01-10 13:52:03 - app.main - ERROR - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 13:52:26 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 13:52:26 - app.main - INFO - Log Level: INFO
+2026-01-10 13:52:26 - app.main - INFO - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 13:52:26 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 13:52:26 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 13:52:26 - app.main - INFO - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 13:52:26 - app.main - INFO - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - STARTUP EVENT: Triggering initial scraping...
+2026-01-10 13:52:26 - app.main - INFO - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - MARKET-IN.GR SCRAPING JOB STARTED - Max products: 100
+2026-01-10 13:52:26 - app.main - INFO - ================================================================================
+2026-01-10 13:52:26 - app.main - INFO - Initializing Market-In scraper...
+2026-01-10 13:52:26 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 13:53:11 - app.main - INFO - Scraping completed, 96 deals scraped
+2026-01-10 13:53:11 - app.main - INFO - Processing 96 deals...
+2026-01-10 13:53:11 - app.main - INFO - Saving 96 deals to database...
+2026-01-10 13:53:12 - app.main - INFO - ✓ Database save completed: 96 new deals, 0 updated deals
+2026-01-10 13:53:12 - app.main - INFO - ================================================================================
+2026-01-10 13:53:12 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 96 deals processed
+2026-01-10 13:53:12 - app.main - INFO - ================================================================================
+2026-01-10 14:01:05 - app.main - INFO - ================================================================================
+2026-01-10 14:01:05 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 14:01:05 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 14:01:05 - app.main - INFO - Log Level: INFO
+2026-01-10 14:01:05 - app.main - INFO - ================================================================================
+2026-01-10 14:01:05 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 14:01:06 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 14:01:06 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 14:01:06 - app.main - INFO - ================================================================================
+2026-01-10 14:01:06 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 14:01:06 - app.main - INFO - ================================================================================
+2026-01-10 14:01:06 - app.main - INFO - ================================================================================
+2026-01-10 14:01:06 - app.main - INFO - STARTUP EVENT: Triggering initial scraping of all pages...
+2026-01-10 14:01:06 - app.main - INFO - ================================================================================
+2026-01-10 14:01:06 - app.main - INFO - ================================================================================
+2026-01-10 14:01:06 - app.main - INFO - MARKET-IN.GR SCRAPING JOB STARTED
+2026-01-10 14:01:06 - app.main - INFO - Max pages: 1000
+2026-01-10 14:01:06 - app.main - INFO - Max products: 10000
+2026-01-10 14:01:06 - app.main - INFO - ================================================================================
+2026-01-10 14:01:06 - app.main - INFO - Initializing Market-In scraper...
+2026-01-10 14:01:06 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 14:01:33 - app.main - INFO - Scraping completed, 0 deals scraped
+2026-01-10 14:01:33 - app.main - WARNING - ✗ No deals were scraped
+2026-01-10 14:02:03 - app.main - INFO - ================================================================================
+2026-01-10 14:02:03 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 14:02:03 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 14:02:03 - app.main - INFO - Log Level: INFO
+2026-01-10 14:02:03 - app.main - INFO - ================================================================================
+2026-01-10 14:02:03 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 14:02:24 - app.main - ERROR - ✗ Failed to create database tables: (psycopg2.OperationalError) connection to server at "ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech" (18.215.6.120), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-10 14:05:39 - app.main - INFO - ================================================================================
+2026-01-10 14:05:39 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 14:05:39 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 14:05:39 - app.main - INFO - Log Level: INFO
+2026-01-10 14:05:39 - app.main - INFO - ================================================================================
+2026-01-10 14:05:39 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 14:05:59 - app.main - ERROR - ✗ Failed to create database tables: (psycopg2.OperationalError) connection to server at "ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech" (18.215.6.120), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-10 14:06:10 - app.main - INFO - ================================================================================
+2026-01-10 14:06:10 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 14:06:10 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 14:06:10 - app.main - INFO - Log Level: INFO
+2026-01-10 14:06:10 - app.main - INFO - ================================================================================
+2026-01-10 14:06:10 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 14:06:30 - app.main - ERROR - ✗ Failed to create database tables: (psycopg2.OperationalError) connection to server at "ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech" (18.215.6.120), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-10 14:06:33 - app.main - INFO - ================================================================================
+2026-01-10 14:06:33 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 14:06:33 - app.main - INFO - Database URL: postgresql://neondb_owner:npg_a8iCru0AwjvO@ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+2026-01-10 14:06:33 - app.main - INFO - Log Level: INFO
+2026-01-10 14:06:33 - app.main - INFO - ================================================================================
+2026-01-10 14:06:33 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 14:06:53 - app.main - ERROR - ✗ Failed to create database tables: (psycopg2.OperationalError) connection to server at "ep-wandering-union-ahxsrepn-pooler.c-3.us-east-1.aws.neon.tech" (18.215.6.120), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-10 14:07:34 - app.main - INFO - ================================================================================
+2026-01-10 14:07:34 - app.main - INFO - Market-In.gr Scraper Starting Up
+2026-01-10 14:07:34 - app.main - INFO - Database URL: postgresql://postgres:postgres@localhost:5432/deals
+2026-01-10 14:07:34 - app.main - INFO - Log Level: INFO
+2026-01-10 14:07:34 - app.main - INFO - ================================================================================
+2026-01-10 14:07:34 - app.main - INFO - Creating PostgreSQL database tables...
+2026-01-10 14:07:35 - app.main - INFO - ✓ Database tables created successfully
+2026-01-10 14:07:35 - app.main - INFO - ✓ FastAPI app initialized successfully
+2026-01-10 14:07:35 - app.main - INFO - ================================================================================
+2026-01-10 14:07:35 - app.main - INFO - Application startup complete - ready to accept requests
+2026-01-10 14:07:35 - app.main - INFO - ================================================================================
+2026-01-10 14:07:35 - app.main - INFO - ================================================================================
+2026-01-10 14:07:35 - app.main - INFO - STARTUP EVENT: Triggering initial scraping of all pages...
+2026-01-10 14:07:35 - app.main - INFO - ================================================================================
+2026-01-10 14:07:35 - app.main - INFO - ================================================================================
+2026-01-10 14:07:35 - app.main - INFO - MARKET-IN.GR SCRAPING JOB STARTED
+2026-01-10 14:07:35 - app.main - INFO - Max pages: 1000
+2026-01-10 14:07:35 - app.main - INFO - Max products: 10000
+2026-01-10 14:07:35 - app.main - INFO - ================================================================================
+2026-01-10 14:07:35 - app.main - INFO - Initializing Market-In scraper...
+2026-01-10 14:07:35 - app.main - INFO - Scraper initialized, starting to scrape deals...
+2026-01-10 14:13:10 - app.main - INFO - Scraping completed, 307 deals scraped
+2026-01-10 14:13:10 - app.main - INFO - Processing 307 deals...
+2026-01-10 14:13:10 - app.main - INFO - Saving 307 deals to database...
+2026-01-10 14:13:13 - app.main - INFO - ✓ Database save completed: 211 new deals, 96 updated deals
+2026-01-10 14:13:13 - app.main - INFO - ================================================================================
+2026-01-10 14:13:13 - app.main - INFO - ✓ SCRAPING JOB COMPLETED SUCCESSFULLY - 307 deals processed
+2026-01-10 14:13:13 - app.main - INFO - ================================================================================
