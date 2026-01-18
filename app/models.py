@@ -19,17 +19,20 @@ class Deal(Base):
     skuid = Column(String(100))
     product_id = Column(String(100), index=True)
     shop_count = Column(String(100))
+    source = Column(String(100), default="market-in.gr")  # Add source field
     scraped_at = Column(DateTime(timezone=True))
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
     is_active = Column(Boolean, default=True)
+    offer = Column(String(200), nullable=True) 
     
     # Create indexes for better query performance
     __table_args__ = (
-        Index('idx_product_id', 'product_id'),
+        Index('idx_product_id_source', 'product_id', 'source'),
         Index('idx_discount', 'discount_percentage'),
         Index('idx_current_price', 'current_price'),
         Index('idx_scraped_at', 'scraped_at'),
+        Index('idx_source', 'source'),
     )
     
     def get_redirect_url(self):

@@ -1,0 +1,66 @@
+BOT DETECTION TEST RESULTS
+==================================================
+
+URL: https://www.sklavenitis.gr
+Title: ΣΚΛΑΒΕΝΙΤΗΣ
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="EL" xml:lang="EL" class="desktop landscape"><head><iframe src="javascript:void(0)" title="" role="presentation" style="width: 0px; height: 0px; border: 0px; display: none;"></iframe><scrip...
+----------------------------------------
+URL: https://www.ab.gr
+Title: Supermarket ΑΒ Βασιλόπουλος - Όλα & κάτι παραπάνω
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html data-testid="document-html" lang="el" style="--header-height: 104px;"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device...
+----------------------------------------
+URL: https://www.lidl-hellas.gr
+Title: Lidl Hellas – Γιατί αξίζει.
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="el-GR" style="--top-nav-height: 218px; --top-nav-top: 0px;"><head><!-- empty_kam_esi --><link rel="icon" type="image/svg+xml" href="/cdn/assets/logos/1.0.1/lidl-logo-shop-cdn.svg"><link re...
+----------------------------------------
+URL: https://www.mymarket.gr
+Title: None
+Accessible: False
+Cloudflare Detected: False
+Error: Timeout: Page didn't load in 15 seconds.
+----------------------------------------
+URL: https://www.masoutis.gr
+Title: Online SuperMarket Μασούτης
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="en" data-critters-container=""><head>
+  <meta charset="utf-8">
+  <title>Online SuperMarket Μασούτης</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-s...
+----------------------------------------
+URL: https://galaxias.shop/
+Title: Αρχική | Σούπερ Μάρκετ Γαλαξίας
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="en" data-critters-container="" class="fonts-loaded"><head>
+  <meta charset="utf-8">
+  <title>Αρχική | Σούπερ Μάρκετ Γαλαξίας</title>
+  <base href="/">
+  <meta name="viewport" content="widt...
+----------------------------------------
+URL: https://www.market-in.gr
+Title: Market-In.gr | Αξίζει να πας!
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage...
+----------------------------------------
+URL: https://www.kritikos-sm.gr
+Title: Κατάστημα Online | SUPERMARKET Κρητικός
+Accessible: True
+Cloudflare Detected: False
+Error: None
+Page Sample: <html lang="el"><head><meta name="viewport" content="width=device-width"><meta charset="utf-8"><title>Κατάστημα Online | SUPERMARKET Κρητικός</title><meta name="google-site-verification" content="IgeH...
+----------------------------------------

@@ -1,0 +1,36 @@
+# Your specific application files
+instance/
+*.db
+*.sqlite3
+*.sqlite
+
+# ChromeDriver (if you download it locally)
+chromedriver*
+geckodriver*
+
+# Screenshots from debugging
+screenshots/
+
+# Exported data
+exports/
+data/exports/
+
+# Temporary scraped data
+tmp/
+temp/
+
+# Logs (already included, but worth emphasizing)
+logs/
+*.log
+
+# Environment files (CRITICAL - never commit these!)
+.env
+.env.local
+.env.development
+.env.production
+.secrets
+credentials.json
+service-account-key.json
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/

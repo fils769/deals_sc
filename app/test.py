@@ -76,20 +76,21 @@ def test_website_for_bot_protection(url, driver, wait_time=15):
 
 # List of websites to test
 websites_to_test = [
-    # "https://www.sklavenitis.gr",
-    # "https://www.ab.gr", 
-    # "https://www.lidl-hellas.gr",
-    # "https://www.mymarket.gr",
-    # "https://www.masoutis.gr",
-    # "https://galaxias.shop/",
-    # "https://www.market-in.gr",
-    # "https://www.kritikos-sm.gr",
-    "https://www.visitgreece.gr/events/",
-    "https://allofgreeceone.culture.gov.gr/",
-    "https://pigolampides.gr/",
-    "https://www.more.com/",
-    "https://events.kalamata.gr/",
-    "https://www.olakala.gr/"
+    "https://www.sklavenitis.gr",
+    "https://www.ab.gr", 
+    "https://www.lidl-hellas.gr",
+    "https://www.mymarket.gr",
+    "https://www.masoutis.gr",
+    "https://galaxias.shop/",
+    "https://www.market-in.gr",
+    "https://www.kritikos-sm.gr",
+    
+    # "https://www.visitgreece.gr/events/",
+    # "https://allofgreeceone.culture.gov.gr/",
+    # "https://pigolampides.gr/",
+    # "https://www.more.com/",
+    # "https://events.kalamata.gr/",
+    # "https://www.olakala.gr/"
 ]
 
 def run_bot_detection_test():
