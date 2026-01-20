@@ -1,4 +1,4 @@
-# masoutis_scraper.py - FIXED WITH CORRECT SELECTORS
+# masoutis_scraper.py - UPDATED WITH BETTER ERROR HANDLING
 import re
 import time
 import logging
@@ -22,7 +22,7 @@ class MasoutisScraper(BaseScraper):
         self.base_url = "https://www.masoutis.gr"
         self.deals_url = "https://www.masoutis.gr/categories/index/prosfores?item=0"
         self.scroll_pause_time = 2.0
-        self.max_scroll_attempts = 30  # More for infinite scroll
+        self.max_scroll_attempts = 30
         self.target_deals_count = 200
     
     def scrape_deals(self, max_pages=None, max_total_deals=None):
@@ -99,6 +99,15 @@ class MasoutisScraper(BaseScraper):
                     logger.info(f"{self.scraper_name}: Reached target of {target_deals} deals")
                     break
             
+            # Log final sample
+            if all_deals:
+                logger.info(f"📊 {self.scraper_name}: Sample of saved deals:")
+                for i, deal in enumerate(all_deals[:3]):
+                    logger.info(f"  Deal {i+1}: {deal.get('title', 'N/A')[:50]}...")
+                    logger.info(f"    Current Price: {deal.get('current_price', 'N/A')}")
+                    logger.info(f"    Original Price: {deal.get('original_price', 'N/A')}")
+                    logger.info(f"    Discount: {deal.get('discount_percentage', 'N/A')}")
+            
             logger.info(f"✓ {self.scraper_name}: Completed - {len(all_deals)} deals collected")
             return all_deals[:target_deals] if max_total_deals else all_deals
             
@@ -111,10 +120,7 @@ class MasoutisScraper(BaseScraper):
     def _apply_discount_filter(self):
         """Apply discount percentage filter"""
         try:
-            # Wait a bit for page
             time.sleep(2)
-            
-            # Find the sort dropdown
             sort_select = None
             selectors = [
                 "select.sort-select",
@@ -134,15 +140,13 @@ class MasoutisScraper(BaseScraper):
                     continue
             
             if sort_select:
-                # Set to discount percentage (value "2: 2")
                 self.driver.execute_script("""
                     arguments[0].value = '2: 2';
                     var event = new Event('change', { bubbles: true });
                     arguments[0].dispatchEvent(event);
                 """, sort_select)
-                
                 logger.info(f"{self.scraper_name}: Applied discount percentage filter")
-                time.sleep(3)  # Wait for page to update
+                time.sleep(3)
             
         except Exception as e:
             logger.warning(f"{self.scraper_name}: Could not apply filter: {e}")
@@ -156,38 +160,69 @@ class MasoutisScraper(BaseScraper):
                 return []
             
             soup = BeautifulSoup(page_source, 'html.parser')
-            
-            # Find product containers - CORRECT SELECTOR
-            product_containers = soup.select('div.productList > div.product')
-            
-            # Alternative: if above doesn't work, try this
-            if not product_containers:
-                product_containers = soup.select('div.product')
+            product_containers = soup.select('div.product')
             
             logger.info(f"{self.scraper_name}: Found {len(product_containers)} product containers")
             
             deals = []
+            successful_parses = 0
+            failed_parses = 0
+            
             for idx, container in enumerate(product_containers):
                 try:
                     deal_data = self.parse_product_container(container)
                     if deal_data:
-                        deals.append(deal_data)
+                        # Check if prices were actually extracted
+                        if deal_data.get('current_price') is None or deal_data.get('original_price') is None:
+                            logger.warning(f"{self.scraper_name}: Product {idx} has null prices: {deal_data.get('title', 'Unknown')}")
+                            failed_parses += 1
+                        else:
+                            deals.append(deal_data)
+                            successful_parses += 1
+                        
+                        # Log first few deals for debugging
+                        if idx < 3:
+                            self._log_sample_deal(deal_data, idx)
                 except Exception as e:
                     logger.debug(f"{self.scraper_name}: Error parsing product {idx}: {e}")
+                    failed_parses += 1
                     continue
             
+            logger.info(f"{self.scraper_name}: Parsed {successful_parses} successful, {failed_parses} failed")
             return deals
             
         except Exception as e:
             logger.error(f"{self.scraper_name}: Parse error: {e}")
             return []
     
+    def _log_sample_deal(self, deal_data, idx):
+        """Log sample deal information for debugging"""
+        logger.info(f"📝 {self.scraper_name}: Sample deal {idx}:")
+        logger.info(f"  Title: {deal_data.get('title', 'N/A')}")
+        logger.info(f"  Current Price: {deal_data.get('current_price', 'N/A')}")
+        logger.info(f"  Original Price: {deal_data.get('original_price', 'N/A')}")
+        logger.info(f"  Discount: {deal_data.get('discount_percentage', 'N/A')}%")
+        logger.info(f"  Offer: {deal_data.get('offer', 'N/A')}")
+        logger.info(f"  Product ID: {deal_data.get('product_id', 'N/A')}")
+    
     def parse_product_container(self, container):
-        """Parse individual product container"""
+        """Parse individual product container with improved price extraction"""
         try:
             # Extract discount percentage
             discount_elem = container.select_one('.pDscntPercent')
             discount_text = discount_elem.get_text(strip=True) if discount_elem else ""
+            
+            # Check for special offer tags like "μόνo"
+            offer_text = discount_text
+            if not discount_text:
+                # Look for other offer tags
+                offer_tags = container.select('[class*="tag"], [class*="badge"], [class*="offer"]')
+                for tag in offer_tags:
+                    tag_text = tag.get_text(strip=True)
+                    if tag_text:
+                        offer_text = tag_text
+                        break
+            
             discount_percentage = self.extract_discount_percentage(discount_text)
             
             # Extract title
@@ -196,37 +231,106 @@ class MasoutisScraper(BaseScraper):
             
             # Extract product ID from URL
             product_id = ""
-            link_elem = container.select_one('a.cursor[href*="/categories/item/"]')
+            link_selectors = [
+                'a.cursor[href*="/categories/item/"]',
+                'a[href*="/categories/item/"]',
+                '.catImgCont[href*="/categories/item/"]'
+            ]
+            
+            link_elem = None
+            for selector in link_selectors:
+                link_elem = container.select_one(selector)
+                if link_elem:
+                    break
+            
             if link_elem:
                 href = link_elem.get('href', '')
-                # Extract ID from: /categories/item/...?3947363=
                 match = re.search(r'\?(\d+)=', href)
                 if match:
                     product_id = match.group(1)
             
-            # Extract prices
+            # IMPORTANT: Find price elements using multiple strategies
+            original_price = None
+            current_price = None
+            
+            # Strategy 1: Look for standard price elements
             original_price_elem = container.select_one('.pStartPrice')
-            original_price_text = original_price_elem.get_text(strip=True) if original_price_elem else ""
-            original_price = self.extract_price(original_price_text)
-            
             current_price_elem = container.select_one('.pDscntPrice')
-            current_price_text = current_price_elem.get_text(strip=True) if current_price_elem else ""
-            current_price = self.extract_price(current_price_text)
             
-            # Extract unit prices
-            start_unit_elem = container.select_one('.startPriceKg')
-            start_unit_text = start_unit_elem.get_text(strip=True) if start_unit_elem else ""
+            if original_price_elem:
+                original_price_text = original_price_elem.get_text(strip=True)
+                original_price = self.extract_price(original_price_text)
             
-            current_unit_elem = container.select_one('.priceKg')
-            current_unit_text = current_unit_elem.get_text(strip=True) if current_unit_elem else ""
+            if current_price_elem:
+                current_price_text = current_price_elem.get_text(strip=True)
+                current_price = self.extract_price(current_price_text)
             
-            # Calculate discount if not explicitly provided
-            if not discount_percentage and original_price and current_price:
+            # Strategy 2: If not found, look for price wrapper
+            if not original_price or not current_price:
+                price_wrapper = container.select_one('.disPrices-wrapper')
+                if price_wrapper:
+                    # Get all divs inside price wrapper
+                    price_divs = price_wrapper.select('div')
+                    prices_found = []
+                    for div in price_divs:
+                        text = div.get_text(strip=True)
+                        price = self.extract_price(text)
+                        if price:
+                            prices_found.append(price)
+                    
+                    # If we found 2 prices, assume first is original, second is current
+                    if len(prices_found) >= 2:
+                        if not original_price:
+                            original_price = prices_found[0]
+                        if not current_price:
+                            current_price = prices_found[1]
+                    elif len(prices_found) == 1:
+                        # Only one price found - this might be the current price
+                        if not current_price:
+                            current_price = prices_found[0]
+            
+            # Strategy 3: Look for any price-like text in the container
+            if not original_price or not current_price:
+                all_text = container.get_text()
+                # Look for price patterns
+                price_patterns = [
+                    r'(\d+[\.,]\d+)\s*€',  # 3.52€ or 3,52€
+                    r'€\s*(\d+[\.,]\d+)',  # €3.52 or €3,52
+                ]
+                
+                prices = []
+                for pattern in price_patterns:
+                    matches = re.findall(pattern, all_text)
+                    for match in matches:
+                        price = self.extract_price(match)
+                        if price and price not in prices:
+                            prices.append(price)
+                
+                # Sort and take the highest as original, lowest as current (for discounts)
+                if len(prices) >= 2:
+                    prices.sort(reverse=True)
+                    if not original_price:
+                        original_price = prices[0]
+                    if not current_price:
+                        current_price = prices[-1]
+                elif len(prices) == 1:
+                    if not current_price:
+                        current_price = prices[0]
+            
+            # Calculate discount if we have prices but no discount percentage
+            if not discount_percentage and original_price and current_price and original_price > 0:
                 try:
                     discount_percentage = ((original_price - current_price) / original_price) * 100
                     discount_percentage = round(discount_percentage, 1)
-                except (ValueError, ZeroDivisionError):
+                except:
                     discount_percentage = None
+            
+            # If we have discount but missing original price, calculate it
+            if discount_percentage and current_price and not original_price:
+                try:
+                    original_price = round(current_price / (1 - discount_percentage/100), 2)
+                except:
+                    pass
             
             # Product URL
             product_url = ""
@@ -243,52 +347,26 @@ class MasoutisScraper(BaseScraper):
                 if src:
                     image_url = urljoin(self.base_url, src)
             
-            # Check for special tags (vegan, bio, etc.)
-            tags = []
-            bio_icons = container.select('.bioIcons')
-            for icon in bio_icons:
-                title_attr = icon.get('title', '')
-                if title_attr:
-                    tags.append(title_attr)
-            
-            # Category - try to extract from URL or guess from title
+            # Category
             category = "Uncategorized"
             if link_elem:
                 href = link_elem.get('href', '')
-                # Extract from URL path: /categories/item/category-name?12345=
                 match = re.search(r'/categories/item/([^/?]+)', href)
                 if match:
                     category_part = match.group(1)
-                    # Clean up category name
                     category = category_part.replace('-', ' ').title()
-            
-            # If no category from URL, guess from title
-            if category == "Uncategorized" and title:
-                title_lower = title.lower()
-                if any(word in title_lower for word in ['γαλα', 'τυρί', 'βούτυρο', 'γιαούρτι']):
-                    category = "Dairy"
-                elif any(word in title_lower for word in ['κρέας', 'κοτόπουλο', 'μοσχάρι', 'χοιρινό']):
-                    category = "Meat"
-                elif any(word in title_lower for word in ['ψωμί', 'ζυμαρικά', 'ρύζι', 'αλεύρι']):
-                    category = "Bakery/Pasta"
-                elif any(word in title_lower for word in ['φρούτα', 'λαχανικά', 'μπανάνα', 'μήλο']):
-                    category = "Produce"
-                elif any(word in title_lower for word in ['ποτό', 'χυμό', 'νερό', 'κρασί']):
-                    category = "Beverages"
             
             # Build specs
             specs_parts = []
-            if current_unit_text:
-                specs_parts.append(f"Unit: {current_unit_text}")
-            if start_unit_text:
-                specs_parts.append(f"Original unit: {start_unit_text}")
-            if tags:
-                specs_parts.append(f"Tags: {', '.join(tags)}")
+            # Look for weight/size in title
+            weight_match = re.search(r'(\d+(?:\.\d+)?)\s*(?:gr|g|kg|ml|l|γρ|κιλό)', title, re.IGNORECASE)
+            if weight_match:
+                specs_parts.append(f"Size: {weight_match.group(0)}")
             
-            specs = " | ".join(specs_parts)
+            specs = " | ".join(specs_parts) if specs_parts else ""
             
-            # Create deal object
-            return {
+            # Create deal object - ensure all fields are properly set
+            deal = {
                 'title': title[:500],
                 'category': category[:200],
                 'specs': specs[:500],
@@ -305,9 +383,85 @@ class MasoutisScraper(BaseScraper):
                 'is_active': True,
                 'scraped_at': datetime.now(),
                 'source': 'masoutis.gr',
-                'offer': discount_text.strip() if discount_text else "",  # Discount badge as offer
+                'offer': offer_text.strip() if offer_text else "",
             }
             
+            # Log if prices are null for debugging
+            if original_price is None or current_price is None:
+                logger.warning(f"{self.scraper_name}: Null prices in deal - Title: {title}, ID: {product_id}")
+            
+            return deal
+            
         except Exception as e:
-            logger.debug(f"{self.scraper_name}: Parse container error: {e}")
+            logger.error(f"{self.scraper_name}: Parse container error: {e}")
             return None
+    
+    def extract_price(self, price_text):
+        """Extract price from text like '3.52€' or '2,34€'"""
+        if not price_text:
+            return None
+        
+        try:
+            # Remove euro symbol and any text
+            price_clean = price_text.lower()
+            
+            # Remove everything except numbers, dot, and comma
+            price_clean = re.sub(r'[^\d,\.]', '', price_clean)
+            
+            if not price_clean:
+                return None
+            
+            # Handle Greek format with comma as decimal
+            if ',' in price_clean:
+                # If both comma and dot exist, dot is thousand separator
+                if '.' in price_clean:
+                    # Count dots - if more than one, they're thousand separators
+                    if price_clean.count('.') > 1:
+                        # Format like 1.234,56
+                        parts = price_clean.split(',')
+                        if len(parts) == 2:
+                            integer_part = parts[0].replace('.', '')
+                            decimal_part = parts[1]
+                            price_clean = f"{integer_part}.{decimal_part}"
+                    else:
+                        # Single dot before comma: 3.52,34? This shouldn't happen
+                        # Just replace comma with dot
+                        price_clean = price_clean.replace(',', '.')
+                else:
+                    # Simple comma decimal: 3,52
+                    price_clean = price_clean.replace(',', '.')
+            
+            # Parse the number
+            match = re.search(r'(\d+\.?\d*)', price_clean)
+            if match:
+                return float(match.group(1))
+            
+        except Exception as e:
+            logger.debug(f"{self.scraper_name}: Error extracting price from '{price_text}': {e}")
+        
+        return None
+    
+    def extract_discount_percentage(self, discount_text):
+        """Extract discount percentage from text like '-40%' or '40%'"""
+        if not discount_text:
+            return None
+        
+        try:
+            # Clean the text
+            discount_clean = discount_text.strip()
+            
+            # Remove any non-numeric characters except dot and percent
+            discount_clean = re.sub(r'[^\d\.%\-]', '', discount_clean)
+            
+            # Extract the number (may include negative sign)
+            match = re.search(r'[-]?(\d+(?:\.\d+)?)', discount_clean)
+            if match:
+                # Get the number (ignore negative sign)
+                num_match = re.search(r'(\d+(?:\.\d+)?)', match.group(0))
+                if num_match:
+                    return float(num_match.group(1))
+            
+        except Exception as e:
+            logger.debug(f"{self.scraper_name}: Error extracting discount from '{discount_text}': {e}")
+        
+        return None

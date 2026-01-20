@@ -252,7 +252,7 @@ class ABScraper(BaseScraper):
         patterns = [
             r'(\d+(?:\.?\d+)?)\s+προϊόντα',
             r'(\d+(?:\.?\d+)?)\s+αντικείμενα',
-            r'(\d+(?:\.?\d+)?)\s+results',
+            r'(\d+(?:\.?\d+?))\s+results',
             r'(\d+(?:\.?\d+)?)\s+items'
         ]
         
@@ -296,15 +296,29 @@ class ABScraper(BaseScraper):
                 if deal_data:
                     deals.append(deal_data)
                     
+                    # Log sample deal info for debugging (first deal only)
+                    if idx == 1:
+                        self._log_sample_deal(deal_data)
+                    
                     # Log progress every 5 products
                     if idx % 5 == 0 or idx == len(product_blocks):
                         logger.debug(f"{self.scraper_name}: Parsed {idx}/{len(product_blocks)} products "
                                    f"({(idx/len(product_blocks)*100):.0f}%)")
             except Exception as e:
-                logger.error(f"{self.scraper_name}: Error parsing product {idx}: {e}")
+                logger.error(f"{self.scraper_name}: Error parsing product {idx}: {e}", exc_info=True)
                 continue
         
         return deals
+    
+    def _log_sample_deal(self, deal_data):
+        """Log sample deal information for debugging"""
+        logger.info(f"📝 {self.scraper_name}: Sample deal:")
+        logger.info(f"  Title: {deal_data.get('title', 'N/A')}")
+        logger.info(f"  Current Price: €{deal_data.get('current_price', 'N/A')}")
+        logger.info(f"  Original Price: €{deal_data.get('original_price', 'N/A')}")
+        logger.info(f"  Discount: {deal_data.get('discount_percentage', 'N/A')}%")
+        logger.info(f"  Offer: {deal_data.get('offer', 'N/A')}")
+        logger.info(f"  Product URL: {deal_data.get('product_url', 'N/A')}")
     
     def parse_product_block(self, block):
         """Parse individual product block for ab.gr"""
@@ -344,43 +358,26 @@ class ABScraper(BaseScraper):
         weight_elem = block.select_one('[data-testid="product-block-supplementary-price"]')
         weight = weight_elem.get_text(strip=True) if weight_elem else ""
         
-        # Price per unit
-        price_per_unit_elem = block.select_one('[data-testid="product-block-price-per-unit"]')
-        price_per_unit = price_per_unit_elem.get_text(strip=True) if price_per_unit_elem else ""
-        
-        # Total price
-        total_price_elem = block.select_one('[data-testid="product-block-price"]')
-        total_price_text = total_price_elem.get_text(strip=True) if total_price_elem else ""
-        
-        # Extract numeric price
-        current_price = self.extract_price(total_price_text)
-        
         # PROMOTION/OFFER - This is the key new field
         promotion_elem = block.select_one('[data-testid="tag-promo"]')
         offer = promotion_elem.get_text(strip=True) if promotion_elem else ""
         
-        # Try to calculate discount from offer text
+        # Extract prices with the new format handling
+        current_price = self._extract_current_price(block)
+        original_price = self._extract_original_price(block)
+        
+        # Calculate discount if we have both prices
         discount_percentage = None
-        if offer:
-            # Look for percentage in offer text (e.g., "Με 20% έκπτωση")
+        if current_price and original_price and original_price > 0:
+            discount_percentage = round(((original_price - current_price) / original_price) * 100, 1)
+        
+        # If discount not calculated from prices, try to extract from offer text
+        if not discount_percentage and offer:
             match = re.search(r'(\d+)%', offer)
             if match:
                 discount_percentage = float(match.group(1))
-            # Or look for discount amount
-            elif 'έκπτωση' in offer.lower() or 'discount' in offer.lower():
-                # Try to extract any number
-                numbers = re.findall(r'\d+', offer)
-                if numbers:
-                    discount_percentage = float(numbers[0])
-        
-        # Original price calculation if we have discount
-        original_price = None
-        if discount_percentage and current_price:
-            original_price = round(current_price / (1 - discount_percentage/100), 2)
         
         # Product URL
-        link_elem = block.select_one('[data-testid="product-block-name-link"]') or \
-                   block.select_one('[data-testid="product-block-image-link"]')
         product_url = ""
         if link_elem:
             href = link_elem.get('href', '')
@@ -405,8 +402,6 @@ class ABScraper(BaseScraper):
         specs_parts = []
         if weight:
             specs_parts.append(f"Weight: {weight}")
-        if price_per_unit:
-            specs_parts.append(f"Unit price: {price_per_unit}")
         if brand:
             specs_parts.append(f"Brand: {brand}")
         
@@ -433,33 +428,187 @@ class ABScraper(BaseScraper):
             'offer': offer[:200] if offer else "",  # NEW FIELD: Promotional offer text
         }
     
-    def extract_price(self, price_text):
-        """Extract price from Greek format text"""
+    def _extract_current_price(self, block):
+        """Extract current price from product block"""
+        # Look for the main price element - NEW price
+        price_elem = block.select_one('[data-testid="product-block-price"]')
+        if not price_elem:
+            return None
+        
+        # Log the HTML structure for debugging
+        price_html = str(price_elem)[:200]
+        logger.debug(f"{self.scraper_name}: Price element HTML: {price_html}")
+        
+        # Method 1: Extract from aria-label (most reliable)
+        aria_label = price_elem.get('aria-label', '')
+        logger.debug(f"{self.scraper_name}: Price aria-label: {aria_label}")
+        
+        if aria_label:
+            # Try Greek format: "Νέα τιμή: 2 ευρώ και 94 λεπτά"
+            if 'Νέα τιμή' in aria_label or 'New price' in aria_label:
+                # Extract euros and cents
+                euros_match = re.search(r'(\d+)\s+ευρώ|\s+(\d+)\s+euro', aria_label, re.IGNORECASE)
+                cents_match = re.search(r'(\d+)\s+λεπτά|\s+(\d+)\s+cents', aria_label, re.IGNORECASE)
+                
+                if euros_match:
+                    euros = float(euros_match.group(1) if euros_match.group(1) else euros_match.group(2))
+                    if cents_match:
+                        cents = float(cents_match.group(1) if cents_match.group(1) else cents_match.group(2)) / 100
+                    else:
+                        cents = 0
+                    return round(euros + cents, 2)
+            
+            # Try any price pattern
+            patterns = [
+                r'(\d+)\s*ευρώ.*?(\d+)\s*λεπτά',  # Greek
+                r'(\d+)\s*euro.*?(\d+)\s*cents',  # English
+                r'€?\s*(\d+)[,\.](\d+)',  # €3,68 or €2.94
+                r'(\d+)\^(\d+)',  # 2^94 format
+            ]
+            
+            for pattern in patterns:
+                match = re.search(pattern, aria_label, re.IGNORECASE)
+                if match:
+                    try:
+                        if pattern in [r'€?\s*(\d+)[,\.](\d+)', r'(\d+)\^(\d+)']:
+                            # For formats like €3,68 or 2^94
+                            euros = float(match.group(1))
+                            cents = float(match.group(2)) / 100
+                            return round(euros + cents, 2)
+                        else:
+                            # For "X euros and Y cents" format
+                            euros = float(match.group(1))
+                            cents = float(match.group(2)) / 100
+                            return round(euros + cents, 2)
+                    except:
+                        continue
+        
+        # Method 2: Extract from visible text structure
+        # Look for the price parts in the specific structure
+        try:
+            # Find euro symbol element
+            euro_elem = price_elem.select_one('.sc-dqia0p-7')
+            if euro_elem:
+                # Find euros number element
+                euros_elem = price_elem.select_one('.sc-dqia0p-8, .hSCnvJ')
+                # Find cents superscript element
+                cents_elem = price_elem.select_one('.sc-dqia0p-9, .ibBxTt, sup')
+                
+                if euros_elem and cents_elem:
+                    euros = float(euros_elem.get_text(strip=True))
+                    cents = float(cents_elem.get_text(strip=True)) / 100
+                    return round(euros + cents, 2)
+        except:
+            pass
+        
+        # Method 3: Extract all text and parse
+        text = price_elem.get_text(strip=True)
+        logger.debug(f"{self.scraper_name}: Price text: {text}")
+        if text:
+            return self._parse_price_text(text)
+        
+        return None
+    
+    def _extract_original_price(self, block):
+        """Extract original price from product block"""
+        # Look for old price element
+        old_price_elem = block.select_one('[data-testid="product-block-old-price"]')
+        if not old_price_elem:
+            return None
+        
+        # Log the HTML structure for debugging
+        old_price_html = str(old_price_elem)[:200]
+        logger.debug(f"{self.scraper_name}: Old price element HTML: {old_price_html}")
+        
+        # Method 1: Extract from aria-label
+        aria_label = old_price_elem.get('aria-label', '')
+        logger.debug(f"{self.scraper_name}: Old price aria-label: {aria_label}")
+        
+        if aria_label:
+            # Try Greek format: "Παλιά τιμή: 3 ευρώ και 68 λεπτά"
+            if 'Παλιά τιμή' in aria_label or 'Old price' in aria_label:
+                euros_match = re.search(r'(\d+)\s+ευρώ|\s+(\d+)\s+euro', aria_label, re.IGNORECASE)
+                cents_match = re.search(r'(\d+)\s+λεπτά|\s+(\d+)\s+cents', aria_label, re.IGNORECASE)
+                
+                if euros_match:
+                    euros = float(euros_match.group(1) if euros_match.group(1) else euros_match.group(2))
+                    if cents_match:
+                        cents = float(cents_match.group(1) if cents_match.group(1) else cents_match.group(2)) / 100
+                    else:
+                        cents = 0
+                    return round(euros + cents, 2)
+        
+        # Method 2: Extract from visible text
+        text = old_price_elem.get_text(strip=True)
+        logger.debug(f"{self.scraper_name}: Old price text: {text}")
+        if text:
+            price = self._parse_price_text(text)
+            if price:
+                return price
+        
+        # Method 3: Look for span elements with class ETpLg (from your example)
+        span_elements = old_price_elem.select('.sc-dqia0p-20, .ETpLg, span')
+        for span in span_elements:
+            text = span.get_text(strip=True)
+            if text and ('€' in text or 'ευρώ' in text.lower()):
+                price = self._parse_price_text(text)
+                if price:
+                    return price
+        
+        return None
+    
+    def _parse_price_text(self, price_text):
+        """Parse price text like €3,68 or €2.94 or 2^94"""
         if not price_text:
             return None
         
+        logger.debug(f"{self.scraper_name}: Parsing price text: '{price_text}'")
+        
         try:
-            price_str = str(price_text)
+            # Clean the text
+            text = price_text.strip()
             
-            # Remove currency symbols and text
-            price_str = price_str.lower()
-            price_str = re.sub(r'[^\d.,]', '', price_str)
+            # Remove currency symbols and extra text
+            text = re.sub(r'[^\d\^,\.]', '', text)
             
-            # Handle Greek decimal (comma as decimal separator)
-            if ',' in price_str and '.' in price_str:
-                # If both present, assume comma is decimal and dot is thousand separator
-                price_str = price_str.replace('.', '').replace(',', '.')
-            elif ',' in price_str:
-                # Comma is decimal separator
-                price_str = price_str.replace(',', '.')
+            # Handle 2^94 format
+            if '^' in text:
+                parts = text.split('^')
+                if len(parts) == 2:
+                    euros = float(parts[0])
+                    cents = float(parts[1]) / 100
+                    return round(euros + cents, 2)
             
-            # Extract number
-            match = re.search(r'(\d+\.?\d*)', price_str)
+            # Handle Greek format with comma as decimal: 3,68
+            if ',' in text:
+                # Remove dots as thousand separators if they exist
+                if '.' in text:
+                    # If format is like 1.234,56 (thousands separator)
+                    parts = text.split(',')
+                    if len(parts) == 2:
+                        integer_part = parts[0].replace('.', '')
+                        decimal_part = parts[1]
+                        return float(f"{integer_part}.{decimal_part}")
+                else:
+                    # Simple comma as decimal: 3,68
+                    text = text.replace(',', '.')
+            
+            # Parse the number
+            match = re.search(r'(\d+\.?\d*)', text)
             if match:
-                return float(match.group(1))
+                num = float(match.group(1))
+                # If number is less than 100 and has no decimal, it might be in cents format
+                if num < 100 and '.' not in match.group(1):
+                    # Check if this looks like it should be in euros.cents format
+                    if len(match.group(1)) > 2:
+                        # Format like 294 -> 2.94
+                        euros = int(match.group(1)[:-2])
+                        cents = int(match.group(1)[-2:])
+                        return round(euros + (cents / 100), 2)
+                return num
             
-        except Exception:
-            pass
+        except Exception as e:
+            logger.debug(f"{self.scraper_name}: Error parsing price text '{price_text}': {e}")
         
         return None
     
