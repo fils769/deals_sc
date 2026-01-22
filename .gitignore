@@ -1,29 +1,39 @@
-# Your specific application files
+# =========================
+# Application / Data files
+# =========================
 instance/
 *.db
-*.sqlite3
 *.sqlite
+*.sqlite3
+*.csv
+debug_page.html
 
-# ChromeDriver (if you download it locally)
-chromedriver*
-geckodriver*
-
-# Screenshots from debugging
-screenshots/
-
-# Exported data
+# =========================
+# Scraped / Exported data
+# =========================
 exports/
 data/exports/
-
-# Temporary scraped data
+scraped_data/*.json
+!scraped_data/.gitkeep
 tmp/
 temp/
 
-# Logs (already included, but worth emphasizing)
+# =========================
+# WebDrivers
+# =========================
+chromedriver*
+chromedriver.exe
+geckodriver*
+
+# =========================
+# Logs
+# =========================
 logs/
 *.log
 
-# Environment files (CRITICAL - never commit these!)
+# =========================
+# Environment / Secrets (CRITICAL)
+# =========================
 .env
 .env.local
 .env.development
@@ -32,5 +42,31 @@ logs/
 credentials.json
 service-account-key.json
 
-# Jupyter notebooks checkpoints
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+env/
+
+# =========================
+# Jupyter
+# =========================
 .ipynb_checkpoints/
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*~

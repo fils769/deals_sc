@@ -12391,3 +12391,763 @@ sqlalchemy.exc.DataError: (psycopg2.errors.StringDataRightTruncation) value too 
 2026-01-18 22:49:13 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E789266180>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/1089c09cf0796fb20096d69030cdc66e
 2026-01-18 22:49:21 - INFO - ✓ MasoutisScraper: Chrome driver closed
 2026-01-18 22:49:23 - INFO - ✓ Saved 874 deals
+2026-01-21 18:03:11 - INFO - ✓ Database initialized
+2026-01-21 18:03:12 - INFO - ✓ App started (scraping disabled on startup)
+2026-01-21 18:07:26 - INFO - Initializing scrapers from config: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-21 18:07:26 - INFO - Processing website: market-in.gr
+2026-01-21 18:07:26 - INFO - MarketInScraper initialized - headless=True
+2026-01-21 18:07:26 - INFO - ✅ Successfully initialized scraper for market-in.gr
+2026-01-21 18:07:26 - INFO - Processing website: sklavenitis
+2026-01-21 18:07:26 - INFO - SklavenitisScraper initialized - headless=True
+2026-01-21 18:07:26 - INFO - ✅ Successfully initialized scraper for sklavenitis
+2026-01-21 18:07:26 - INFO - Processing website: ab.gr
+2026-01-21 18:07:26 - INFO - ABScraper initialized - headless=True
+2026-01-21 18:07:26 - INFO - ✅ Successfully initialized scraper for ab.gr
+2026-01-21 18:07:26 - INFO - Processing website: masoutis.gr
+2026-01-21 18:07:26 - INFO - MasoutisScraper initialized - headless=True
+2026-01-21 18:07:26 - INFO - ✅ Successfully initialized scraper for masoutis.gr
+2026-01-21 18:07:26 - INFO - Processing website: kritikos-sm.gr
+2026-01-21 18:07:26 - INFO - KritikosScraper initialized - headless=True
+2026-01-21 18:07:26 - INFO - ✅ Successfully initialized scraper for kritikos-sm.gr
+2026-01-21 18:07:26 - INFO - ScraperManager initialized with 5 enabled scrapers
+2026-01-21 18:07:26 - INFO - Available scrapers: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 12:08:36 - INFO - ✓ Database initialized
+2026-01-22 12:08:36 - INFO - ✓ App started (scraping disabled on startup)
+2026-01-22 12:09:11 - INFO - ✓ Database initialized
+2026-01-22 12:09:11 - INFO - ✓ App started (scraping disabled on startup)
+2026-01-22 12:09:57 - INFO - ▶ Running ALL scrapers
+2026-01-22 12:09:57 - INFO - Initializing scrapers from config: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 12:09:57 - INFO - Processing website: market-in.gr
+2026-01-22 12:09:57 - INFO - MarketInScraper initialized - headless=True
+2026-01-22 12:09:57 - INFO - ✅ Successfully initialized scraper for market-in.gr
+2026-01-22 12:09:57 - INFO - Processing website: sklavenitis
+2026-01-22 12:09:57 - INFO - SklavenitisScraper initialized - headless=True
+2026-01-22 12:09:57 - INFO - ✅ Successfully initialized scraper for sklavenitis
+2026-01-22 12:09:57 - INFO - Processing website: ab.gr
+2026-01-22 12:09:57 - INFO - ABScraper initialized - headless=True
+2026-01-22 12:09:57 - INFO - ✅ Successfully initialized scraper for ab.gr
+2026-01-22 12:09:57 - INFO - Processing website: masoutis.gr
+2026-01-22 12:09:57 - INFO - MasoutisScraper initialized - headless=True
+2026-01-22 12:09:57 - INFO - ✅ Successfully initialized scraper for masoutis.gr
+2026-01-22 12:09:57 - INFO - Processing website: kritikos-sm.gr
+2026-01-22 12:09:57 - INFO - KritikosScraper initialized - headless=True
+2026-01-22 12:09:57 - INFO - ✅ Successfully initialized scraper for kritikos-sm.gr
+2026-01-22 12:09:57 - INFO - ScraperManager initialized with 5 enabled scrapers
+2026-01-22 12:09:57 - INFO - Available scrapers: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 12:09:57 - INFO - 🧩 Total scrapers to run: 5
+2026-01-22 12:09:57 - INFO - 📌 Scrapers: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 12:09:57 - INFO - 🚀 [1/5] Starting scraper: market-in.gr
+2026-01-22 12:09:57 - INFO -    Limits → pages=50, deals=200000
+2026-01-22 12:09:57 - INFO - MarketInScraper: Setting up Chrome driver...
+2026-01-22 12:09:59 - INFO - ✓ MarketInScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:09:59 - INFO - MarketInScraper: Starting to scrape deals
+2026-01-22 12:09:59 - INFO - MarketInScraper: Starting pagination scraping
+2026-01-22 12:09:59 - INFO - MarketInScraper: Processing page 1
+2026-01-22 12:10:44 - ERROR - ✗ MarketInScraper: Scraping failed: Message: timeout: Timed out receiving message from renderer: 35.268
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scrapers\marketin_scraper.py", line 49, in scrape_with_pagination
+    self.driver.get(url)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 35.268
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:10:44 - WARNING - ⚠ [1/5] market-in.gr finished: no deals found
+2026-01-22 12:10:47 - INFO - ✓ MarketInScraper: Chrome driver closed
+2026-01-22 12:10:47 - INFO - ⏳ Cooling down for 5s before next scraper...
+2026-01-22 12:10:52 - INFO - 🚀 [2/5] Starting scraper: sklavenitis
+2026-01-22 12:10:52 - INFO -    Limits → pages=20, deals=200000
+2026-01-22 12:10:52 - INFO - SklavenitisScraper: Setting up Chrome driver...
+2026-01-22 12:10:55 - INFO - ✓ SklavenitisScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:10:55 - INFO - SklavenitisScraper: Starting to scrape deals
+2026-01-22 12:10:55 - INFO - SklavenitisScraper: Starting pagination scraping
+2026-01-22 12:10:55 - INFO - SklavenitisScraper: Processing page 1
+2026-01-22 12:11:40 - ERROR - ✗ SklavenitisScraper: Scraping failed: Message: timeout: Timed out receiving message from renderer: 41.808
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scrapers\sklavenitis_scraper.py", line 49, in scrape_with_pagination
+    self.driver.get(url)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 41.808
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:11:42 - INFO - ✓ SklavenitisScraper: Chrome driver closed
+2026-01-22 12:11:42 - WARNING - ⚠ [2/5] sklavenitis finished: no deals found
+2026-01-22 12:11:46 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=29714): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/2ba2b2ebcbab120eff7ae3f535a51093
+2026-01-22 12:11:50 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=29714): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/2ba2b2ebcbab120eff7ae3f535a51093
+2026-01-22 12:11:54 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=29714): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/2ba2b2ebcbab120eff7ae3f535a51093
+2026-01-22 12:12:02 - INFO - ✓ SklavenitisScraper: Chrome driver closed
+2026-01-22 12:12:02 - INFO - ⏳ Cooling down for 5s before next scraper...
+2026-01-22 12:12:07 - INFO - 🚀 [3/5] Starting scraper: ab.gr
+2026-01-22 12:12:07 - INFO -    Limits → pages=20, deals=200000
+2026-01-22 12:12:07 - INFO - ABScraper: Setting up Chrome driver...
+2026-01-22 12:12:09 - INFO - ✓ ABScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:12:09 - INFO - ABScraper: Starting to scrape deals
+2026-01-22 12:12:09 - INFO - ABScraper: Max pages: 20
+2026-01-22 12:12:09 - INFO - ABScraper: Max total deals: 200000
+2026-01-22 12:12:09 - INFO - ABScraper: Starting pagination scraping
+2026-01-22 12:12:09 - INFO - 📄 ABScraper: Processing page 1 | Total deals so far: 0 | Elapsed: 0m 1s
+2026-01-22 12:13:02 - ERROR - ⚠ ABScraper: Timeout loading page 1: Message: 
+
+2026-01-22 12:13:02 - INFO - 📄 ABScraper: Processing page 2 | Total deals so far: 0 | Elapsed: 0m 55s
+2026-01-22 12:13:48 - ERROR - ⚠ ABScraper: Timeout loading page 2: Message: timeout: Timed out receiving message from renderer: 2.643
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:13:48 - INFO - ✅ ABScraper: Scraping completed - 0 deals collected in 1m 40s
+2026-01-22 12:13:48 - INFO - 📊 ABScraper: Average speed: 0.0 deals per minute
+2026-01-22 12:13:50 - INFO - ✓ ABScraper: Chrome driver closed
+2026-01-22 12:13:50 - WARNING - ⚠ [3/5] ab.gr finished: no deals found
+2026-01-22 12:13:54 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=24292): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/3c9066f5a1c14715cddf6c9a5dea0761
+2026-01-22 12:13:58 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=24292): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/3c9066f5a1c14715cddf6c9a5dea0761
+2026-01-22 12:14:02 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=24292): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/3c9066f5a1c14715cddf6c9a5dea0761
+2026-01-22 12:14:10 - INFO - ✓ ABScraper: Chrome driver closed
+2026-01-22 12:14:10 - INFO - ⏳ Cooling down for 5s before next scraper...
+2026-01-22 12:14:15 - INFO - 🚀 [4/5] Starting scraper: masoutis.gr
+2026-01-22 12:14:15 - INFO -    Limits → pages=1, deals=200000
+2026-01-22 12:14:15 - INFO - MasoutisScraper: Setting up Chrome driver...
+2026-01-22 12:14:17 - INFO - ✓ MasoutisScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:14:17 - app.scrapers.masoutis_scraper - INFO - MasoutisScraper: Starting to scrape deals
+2026-01-22 12:14:17 - app.scrapers.masoutis_scraper - INFO - MasoutisScraper: Target deals: 200000
+2026-01-22 12:14:17 - INFO - MasoutisScraper: Navigation attempt 1/3 to https://www.masoutis.gr/categories/index/prosfores?item=0
+2026-01-22 12:15:02 - WARNING - MasoutisScraper: Timeout on attempt 1
+2026-01-22 12:15:02 - INFO - MasoutisScraper: Backing off for 5 seconds
+2026-01-22 12:15:07 - INFO - MasoutisScraper: Navigation attempt 2/3 to https://www.masoutis.gr/categories/index/prosfores?item=0
+2026-01-22 12:15:52 - WARNING - MasoutisScraper: Timeout on attempt 2
+2026-01-22 12:15:52 - INFO - MasoutisScraper: Backing off for 10 seconds
+2026-01-22 12:16:02 - INFO - MasoutisScraper: Navigation attempt 3/3 to https://www.masoutis.gr/categories/index/prosfores?item=0
+2026-01-22 12:16:47 - WARNING - MasoutisScraper: Timeout on attempt 3
+2026-01-22 12:16:47 - ERROR - MasoutisScraper: Failed to load page after 3 attempts
+2026-01-22 12:16:47 - app.scrapers.masoutis_scraper - ERROR - MasoutisScraper: Failed to load page
+2026-01-22 12:16:50 - INFO - ✓ MasoutisScraper: Chrome driver closed
+2026-01-22 12:16:50 - WARNING - ⚠ [4/5] masoutis.gr finished: no deals found
+2026-01-22 12:16:54 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=11791): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/e1f42b39f1a5b1dce1d9c0e209ab852b
+2026-01-22 12:16:58 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=11791): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/e1f42b39f1a5b1dce1d9c0e209ab852b
+2026-01-22 12:17:02 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=11791): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/e1f42b39f1a5b1dce1d9c0e209ab852b
+2026-01-22 12:17:10 - INFO - ✓ MasoutisScraper: Chrome driver closed
+2026-01-22 12:17:10 - INFO - ⏳ Cooling down for 5s before next scraper...
+2026-01-22 12:17:15 - INFO - 🚀 [5/5] Starting scraper: kritikos-sm.gr
+2026-01-22 12:17:15 - INFO -    Limits → pages=1, deals=200000
+2026-01-22 12:17:15 - INFO - KritikosScraper: Setting up Chrome driver...
+2026-01-22 12:17:17 - INFO - ✓ KritikosScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:17:17 - INFO - 🚀 KritikosScraper: Starting to scrape deals from infinite scroll page
+2026-01-22 12:17:17 - INFO - 📌 URL: https://kritikos-sm.gr/offers/
+2026-01-22 12:17:17 - INFO - 🌐 KritikosScraper: Loading initial page...
+2026-01-22 12:18:02 - ERROR - ❌ KritikosScraper: Scraping failed: Message: timeout: Timed out receiving message from renderer: 29.576
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scrapers\kritikos_scraper.py", line 34, in scrape_deals
+    self.driver.get(self.deals_url)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 29.576
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:18:02 - WARNING - ⚠ [5/5] kritikos-sm.gr finished: no deals found
+2026-01-22 12:18:04 - INFO - ✓ KritikosScraper: Chrome driver closed
+2026-01-22 12:18:04 - INFO - 📊 Scraping summary per scraper:
+2026-01-22 12:18:04 - INFO -    • market-in.gr: 0 deals
+2026-01-22 12:18:04 - INFO -    • sklavenitis: 0 deals
+2026-01-22 12:18:04 - INFO -    • ab.gr: 0 deals
+2026-01-22 12:18:04 - INFO -    • masoutis.gr: 0 deals
+2026-01-22 12:18:04 - INFO -    • kritikos-sm.gr: 0 deals
+2026-01-22 12:18:04 - INFO - 🏁 Total deals scraped (all scrapers): 0
+2026-01-22 12:26:21 - INFO - ▶ Running ALL scrapers
+2026-01-22 12:26:21 - INFO - Initializing scrapers from config: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 12:26:21 - INFO - Processing website: market-in.gr
+2026-01-22 12:26:21 - INFO - MarketInScraper initialized - headless=True
+2026-01-22 12:26:21 - INFO - ✅ Successfully initialized scraper for market-in.gr
+2026-01-22 12:26:21 - INFO - Processing website: sklavenitis
+2026-01-22 12:26:21 - INFO - SklavenitisScraper initialized - headless=True
+2026-01-22 12:26:21 - INFO - ✅ Successfully initialized scraper for sklavenitis
+2026-01-22 12:26:21 - INFO - Processing website: ab.gr
+2026-01-22 12:26:21 - INFO - ABScraper initialized - headless=True
+2026-01-22 12:26:21 - INFO - ✅ Successfully initialized scraper for ab.gr
+2026-01-22 12:26:21 - INFO - Processing website: masoutis.gr
+2026-01-22 12:26:21 - INFO - MasoutisScraper initialized - headless=True
+2026-01-22 12:26:21 - INFO - ✅ Successfully initialized scraper for masoutis.gr
+2026-01-22 12:26:21 - INFO - Processing website: kritikos-sm.gr
+2026-01-22 12:26:21 - INFO - KritikosScraper initialized - headless=True
+2026-01-22 12:26:21 - INFO - ✅ Successfully initialized scraper for kritikos-sm.gr
+2026-01-22 12:26:21 - INFO - ScraperManager initialized with 5 enabled scrapers
+2026-01-22 12:26:21 - INFO - Available scrapers: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 12:26:21 - INFO - 🧩 Total scrapers to run: 5
+2026-01-22 12:26:21 - INFO - 📌 Scrapers: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 12:26:21 - INFO - 🚀 [1/5] Starting scraper: market-in.gr
+2026-01-22 12:26:21 - INFO -    Limits → pages=50, deals=200000
+2026-01-22 12:26:21 - INFO - MarketInScraper: Setting up Chrome driver...
+2026-01-22 12:26:23 - INFO - ✓ MarketInScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:26:23 - INFO - MarketInScraper: Starting to scrape deals
+2026-01-22 12:26:23 - INFO - MarketInScraper: Starting pagination scraping
+2026-01-22 12:26:23 - INFO - MarketInScraper: Processing page 1
+2026-01-22 12:27:08 - ERROR - ✗ MarketInScraper: Scraping failed: Message: timeout: Timed out receiving message from renderer: 21.816
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scrapers\marketin_scraper.py", line 49, in scrape_with_pagination
+    self.driver.get(url)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 21.816
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:27:08 - WARNING - ⚠ [1/5] market-in.gr finished: no deals found
+2026-01-22 12:27:11 - INFO - ✓ MarketInScraper: Chrome driver closed
+2026-01-22 12:27:11 - INFO - ⏳ Cooling down for 5s before next scraper...
+2026-01-22 12:27:16 - INFO - 🚀 [2/5] Starting scraper: sklavenitis
+2026-01-22 12:27:16 - INFO -    Limits → pages=20, deals=200000
+2026-01-22 12:27:16 - INFO - SklavenitisScraper: Setting up Chrome driver...
+2026-01-22 12:27:18 - INFO - ✓ SklavenitisScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:27:18 - INFO - SklavenitisScraper: Starting to scrape deals
+2026-01-22 12:27:18 - INFO - SklavenitisScraper: Starting pagination scraping
+2026-01-22 12:27:18 - INFO - SklavenitisScraper: Processing page 1
+2026-01-22 12:28:03 - ERROR - ✗ SklavenitisScraper: Scraping failed: Message: timeout: Timed out receiving message from renderer: 34.323
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scrapers\sklavenitis_scraper.py", line 49, in scrape_with_pagination
+    self.driver.get(url)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 34.323
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:28:05 - INFO - ✓ SklavenitisScraper: Chrome driver closed
+2026-01-22 12:28:05 - WARNING - ⚠ [2/5] sklavenitis finished: no deals found
+2026-01-22 12:28:09 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=31746): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/45dafc3be366dd8308fce29c015189e1
+2026-01-22 12:28:13 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=31746): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/45dafc3be366dd8308fce29c015189e1
+2026-01-22 12:28:17 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=31746): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/45dafc3be366dd8308fce29c015189e1
+2026-01-22 12:28:26 - INFO - ✓ SklavenitisScraper: Chrome driver closed
+2026-01-22 12:28:26 - INFO - ⏳ Cooling down for 5s before next scraper...
+2026-01-22 12:28:31 - INFO - 🚀 [3/5] Starting scraper: ab.gr
+2026-01-22 12:28:31 - INFO -    Limits → pages=20, deals=200000
+2026-01-22 12:28:31 - INFO - ABScraper: Setting up Chrome driver...
+2026-01-22 12:28:32 - INFO - ✓ ABScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:28:32 - INFO - ABScraper: Starting to scrape deals
+2026-01-22 12:28:32 - INFO - ABScraper: Max pages: 20
+2026-01-22 12:28:32 - INFO - ABScraper: Max total deals: 200000
+2026-01-22 12:28:32 - INFO - ABScraper: Starting pagination scraping
+2026-01-22 12:28:32 - INFO - 📄 ABScraper: Processing page 1 | Total deals so far: 0 | Elapsed: 0m 1s
+2026-01-22 12:29:17 - ERROR - ⚠ ABScraper: Timeout loading page 1: Message: timeout: Timed out receiving message from renderer: 37.592
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:29:17 - INFO - 📄 ABScraper: Processing page 2 | Total deals so far: 0 | Elapsed: 0m 46s
+2026-01-22 12:30:02 - ERROR - ⚠ ABScraper: Timeout loading page 2: Message: timeout: Timed out receiving message from renderer: 39.576
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:30:02 - INFO - ✅ ABScraper: Scraping completed - 0 deals collected in 1m 31s
+2026-01-22 12:30:02 - INFO - 📊 ABScraper: Average speed: 0.0 deals per minute
+2026-01-22 12:30:05 - INFO - ✓ ABScraper: Chrome driver closed
+2026-01-22 12:30:05 - WARNING - ⚠ [3/5] ab.gr finished: no deals found
+2026-01-22 12:30:09 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=37861): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/d7a618fea0fd5c8458a0e965f6763230
+2026-01-22 12:30:13 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=37861): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/d7a618fea0fd5c8458a0e965f6763230
+2026-01-22 12:30:38 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=37861): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/d7a618fea0fd5c8458a0e965f6763230
+2026-01-22 12:30:46 - INFO - ✓ ABScraper: Chrome driver closed
+2026-01-22 12:30:46 - INFO - ⏳ Cooling down for 5s before next scraper...
+2026-01-22 12:30:51 - INFO - 🚀 [4/5] Starting scraper: masoutis.gr
+2026-01-22 12:30:51 - INFO -    Limits → pages=1, deals=200000
+2026-01-22 12:30:51 - INFO - MasoutisScraper: Setting up Chrome driver...
+2026-01-22 12:30:53 - INFO - ✓ MasoutisScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:30:53 - app.scrapers.masoutis_scraper - INFO - MasoutisScraper: Starting to scrape deals
+2026-01-22 12:30:54 - app.scrapers.masoutis_scraper - INFO - MasoutisScraper: Target deals: 200000
+2026-01-22 12:30:54 - INFO - MasoutisScraper: Navigation attempt 1/3 to https://www.masoutis.gr/categories/index/prosfores?item=0
+2026-01-22 12:31:39 - WARNING - MasoutisScraper: Timeout on attempt 1
+2026-01-22 12:31:39 - INFO - MasoutisScraper: Backing off for 5 seconds
+2026-01-22 12:31:44 - INFO - MasoutisScraper: Navigation attempt 2/3 to https://www.masoutis.gr/categories/index/prosfores?item=0
+2026-01-22 12:32:29 - WARNING - MasoutisScraper: Timeout on attempt 2
+2026-01-22 12:32:29 - INFO - MasoutisScraper: Backing off for 10 seconds
+2026-01-22 12:32:39 - INFO - MasoutisScraper: Navigation attempt 3/3 to https://www.masoutis.gr/categories/index/prosfores?item=0
+2026-01-22 12:33:24 - WARNING - MasoutisScraper: Timeout on attempt 3
+2026-01-22 12:33:24 - ERROR - MasoutisScraper: Failed to load page after 3 attempts
+2026-01-22 12:33:24 - app.scrapers.masoutis_scraper - ERROR - MasoutisScraper: Failed to load page
+2026-01-22 12:33:26 - INFO - ✓ MasoutisScraper: Chrome driver closed
+2026-01-22 12:33:26 - WARNING - ⚠ [4/5] masoutis.gr finished: no deals found
+2026-01-22 12:33:30 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=45505): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/69b97ad9aa55fc81adb297de3d168019
+2026-01-22 12:33:34 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=45505): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/69b97ad9aa55fc81adb297de3d168019
+2026-01-22 12:33:38 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=45505): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/69b97ad9aa55fc81adb297de3d168019
+2026-01-22 12:33:46 - INFO - ✓ MasoutisScraper: Chrome driver closed
+2026-01-22 12:33:46 - INFO - ⏳ Cooling down for 5s before next scraper...
+2026-01-22 12:33:51 - INFO - 🚀 [5/5] Starting scraper: kritikos-sm.gr
+2026-01-22 12:33:51 - INFO -    Limits → pages=1, deals=200000
+2026-01-22 12:33:51 - INFO - KritikosScraper: Setting up Chrome driver...
+2026-01-22 12:33:54 - INFO - ✓ KritikosScraper: Chrome driver initialized with enhanced anti-bot measures
+2026-01-22 12:33:54 - INFO - 🚀 KritikosScraper: Starting to scrape deals from infinite scroll page
+2026-01-22 12:33:54 - INFO - 📌 URL: https://kritikos-sm.gr/offers/
+2026-01-22 12:33:54 - INFO - 🌐 KritikosScraper: Loading initial page...
+2026-01-22 12:34:39 - ERROR - ❌ KritikosScraper: Scraping failed: Message: timeout: Timed out receiving message from renderer: 19.572
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+Traceback (most recent call last):
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\app\scrapers\kritikos_scraper.py", line 34, in scrape_deals
+    self.driver.get(self.deals_url)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\filal\OneDrive\Documents\deals-scrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 19.572
+  (Session info: chrome=143.0.7499.193)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cf7488d5
+	0x7ff7cf748930
+	0x7ff7cf52165d
+	0x7ff7cf50e847
+	0x7ff7cf50e5bd
+	0x7ff7cf50c20a
+	0x7ff7cf50cbcf
+	0x7ff7cf51bb8a
+	0x7ff7cf53223f
+	0x7ff7cf53940a
+	0x7ff7cf50d375
+	0x7ff7cf531df2
+	0x7ff7cf5cb080
+	0x7ff7cf56ac29
+	0x7ff7cf56ba93
+	0x7ff7cfa60620
+	0x7ff7cfa5af60
+	0x7ff7cfa796c6
+	0x7ff7cf765dd4
+	0x7ff7cf76ed7c
+	0x7ff7cf751ff4
+	0x7ff7cf7521a5
+	0x7ff7cf737ed2
+	0x7ffd33f4e8d7
+	0x7ffd35c2c53c
+
+2026-01-22 12:34:39 - WARNING - ⚠ [5/5] kritikos-sm.gr finished: no deals found
+2026-01-22 12:34:41 - INFO - ✓ KritikosScraper: Chrome driver closed
+2026-01-22 12:34:41 - INFO - 📊 Scraping summary per scraper:
+2026-01-22 12:34:41 - INFO -    • market-in.gr: 0 deals
+2026-01-22 12:34:41 - INFO -    • sklavenitis: 0 deals
+2026-01-22 12:34:41 - INFO -    • ab.gr: 0 deals
+2026-01-22 12:34:41 - INFO -    • masoutis.gr: 0 deals
+2026-01-22 12:34:41 - INFO -    • kritikos-sm.gr: 0 deals
+2026-01-22 12:34:41 - INFO - 🏁 Total deals scraped (all scrapers): 0
+2026-01-22 12:48:23 - INFO - Initializing scrapers from config: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 12:48:23 - INFO - Processing website: market-in.gr
+2026-01-22 12:48:23 - INFO - MarketInScraper initialized - headless=True
+2026-01-22 12:48:23 - INFO - ✅ Successfully initialized scraper for market-in.gr
+2026-01-22 12:48:23 - INFO - Processing website: sklavenitis
+2026-01-22 12:48:23 - INFO - SklavenitisScraper initialized - headless=True
+2026-01-22 12:48:23 - INFO - ✅ Successfully initialized scraper for sklavenitis
+2026-01-22 12:48:23 - INFO - Processing website: ab.gr
+2026-01-22 12:48:23 - INFO - ABScraper initialized - headless=True
+2026-01-22 12:48:23 - INFO - ✅ Successfully initialized scraper for ab.gr
+2026-01-22 12:48:23 - INFO - Processing website: masoutis.gr
+2026-01-22 12:48:23 - INFO - MasoutisScraper initialized - headless=True
+2026-01-22 12:48:23 - INFO - ✅ Successfully initialized scraper for masoutis.gr
+2026-01-22 12:48:23 - INFO - Processing website: kritikos-sm.gr
+2026-01-22 12:48:23 - INFO - KritikosScraper initialized - headless=True
+2026-01-22 12:48:23 - INFO - ✅ Successfully initialized scraper for kritikos-sm.gr
+2026-01-22 12:48:23 - INFO - ScraperManager initialized with 5 enabled scrapers
+2026-01-22 12:48:23 - INFO - Available scrapers: ['market-in.gr', 'sklavenitis', 'ab.gr', 'masoutis.gr', 'kritikos-sm.gr']
+2026-01-22 13:17:49 - INFO - ✓ Database initialized
+2026-01-22 13:17:49 - INFO - ✓ App started (scraping disabled on startup)
+2026-01-22 13:18:07 - INFO - ✓ Database initialized
+2026-01-22 13:18:07 - INFO - ✓ App started (scraping disabled on startup)
+2026-01-22 13:23:17 - INFO - ✓ Database initialized
+2026-01-22 13:23:17 - INFO - ✓ App started (scraping disabled on startup)
+2026-01-22 17:10:46 - INFO - ✓ Database initialized
+2026-01-22 17:10:47 - INFO - ✓ App started (scraping disabled on startup)
+2026-01-22 17:12:15 - INFO - ✓ Database initialized
+2026-01-22 17:12:15 - INFO - ✓ App started (scraping disabled on startup)
+2026-01-22 17:20:46 - INFO - ✓ Database initialized
+2026-01-22 17:20:46 - INFO - ✓ App started (scraping disabled on startup)
